@@ -1,0 +1,67 @@
+{
+  "name": "markoa-skeleton-app",
+  "description": "Markoa skeleton app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kristianmandrup/markoa-skeleton-app",
+  "author": {
+    "name": "Kristian Mandrup",
+    "email": "kmandrup@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kristianmandrup/markoa-skeleton-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristianmandrup/markoa-skeleton-app/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "node .",
+    "start": "browser-refresh ."
+  },
+  "dependencies": {
+    "browser-refresh-taglib": "^1.0.3",
+    "marko": "^2.7.9",
+    "marooka": "^0.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.7.1",
+    "axis": "^0.4.2",
+    "browser-sync": "^2.8.2",
+    "chai": "^1.9.1",
+    "co": "^3.1.0",
+    "co-supertest": "0.0.7",
+    "fluidity": "^0.2.3",
+    "gulp": "^3.8.7",
+    "gulp-exit": "^0.0.2",
+    "gulp-mocha-co": "^0.4.1-co.3",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.6",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.4",
+    "jade": "^1.11.0",
+    "jade-marko": "^0.1.1",
+    "jeet": "^6.1.2",
+    "koa-browser-sync": "0.0.1",
+    "nib": "^1.1.0",
+    "require-dir": "^0.3.0",
+    "rupture": "^0.6.1",
+    "stylus": "^0.52.0",
+    "sugar": "^1.4.1",
+    "supertest": "^0.13.0",
+    "typographic": "^2.9.3"
+  },
+  "keywords": [
+    "marooka",
+    "marko",
+    "koa",
+    "jade",
+    "stylus"
+  ]
+}
