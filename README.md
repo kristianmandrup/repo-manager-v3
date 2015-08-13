@@ -4,58 +4,45 @@ Simple Marko app skeleton
 Getting started
 ---------------
 
+Exectute these in order
+
+Get a copy of the app/project
+
 ```bash
-git clone git@github.com:kristianmandrup/markoa-skeleton-app.git
-cd markoa-skeleton-app
+git clone git@github.com:kristianmandrup/repo-manager-v3.git
+cd repo-manager-v3
+```
+
+Install local and global dependencies
+
+```sh
+npm install -g slush slush-markoa browser-refresh
 npm install
-npm test
+```
+
+Build Semantic UI distribution
+
+```sh
+cd semantic
+gulp build
+cd ..
+```
+
+Start the server via *browser-refresh*
+
+```sh
+browser-refresh .
 ```
 
 Open Chrome browser at `localhost:4000`
 
-in Terminal, hit `CTRL-C` to shut down Node server process.
-
-Run again using browser-refresh
-
-`npm start`
-
-Open Chrome browser at `localhost:4000`
+Watch `.jade` and `.styl` files for changes and auto compile.
 
 `gulp watch`
 
 Edit `.jade` and `.styl` files and see the browser auto refresh when you change the HTML ;)
 
-### Development
-
-If you want to add [roots](roots.cx), run the `roots` slush generator:
-
-`slush markoa:roots`
-
-If you have `roots` installed, run:
-
-`gulp watch`
-
-To watch `.jade` and `.styl` files to convert into `.marko` and `.css` respectively.
-
-### Mounting app on Markoa server
-
-*Work in Progress (WIP)*
-
-Ideally you should be able to mount the app like this:
-
-```js
-let myApp = require('markoa-skeleton-app');
-let apps = ['index'];
-myApp.mountIn(myAppContainer, apps);
-```
-
-You can also use the `mounter.js` directly:
-
-```js
-let apps = ['index', 'projects'];
-let mount = require('./mounter')(appContainer)
-mount(apps);
-```
+Note: You might (sometimes) need to run `gulp jade:marko` manually to force a recompile of all jade templates
 
 ### App file structure
 
@@ -63,27 +50,32 @@ mount(apps);
 /apps
   /_global
     /components
+      /link-button // global custom tag
     /state
-      index.js
+      index.js // global state available all apps
     /layouts
-      _default_page.jade
+      layout.jade
   /index
     /components
-      /project-feed
+      /project-feed // custom tag
+        marko-tag.json
+        renderer.js
+        template.jade
         template.marko
     /layouts
-      _page.jade
-    /state
-      index.js
+      mobile.jade
     /page
       index.jade
       index.marko
-      index.browser.json
+      index.browser.json // lasso config file
+      layout.jade // default layout for index app
+    /state
+      index.js // local state for index app only
     marko-taglib.json
   /repositories
   /teams
   ...
-  marko-taglib.json  
+marko-taglib.json  
 ```
 
 ### Generating apps
