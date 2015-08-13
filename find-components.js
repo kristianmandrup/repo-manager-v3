@@ -1,2 +1,2 @@
-var globals = require('./apps/_global')();
-globals().widgets
+//var globals = 
+require('./apps/_global');
