@@ -1,13 +1,12 @@
 var path = require('path');
 var markoa = require('marooka')
-var Components = markoa.Components;
+var components = markoa.components;
 var componentsPath = path.join(__dirname, 'components')
 
-var components = new Components(componentsPath, function(finder) {
-  var widgets = finder('widgets');
-  var tags = finder('tags');
-  console.log('widgets', widgets);
-  console.log('tags', tags);
+components.categorizer(componentsPath, function(finder) {
+  var comps = finder();
+  var compsListPath = path.join(componentsPath, 'components-map.json');
+  components.writer.toJsonFile(compsListPath, comps, function() {
+    // console.log('DONE');
+  });
 });
-
-// var tags = components('tags');
