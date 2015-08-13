@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "browser-refresh-taglib": "^1.0.3",
+    "extend": "^3.0.0",
     "marko": "^2.7.9",
     "marooka": "^0.1.2"
   },
