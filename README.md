@@ -136,7 +136,12 @@ If an app name is given: `apps/[app-name]/components`
 
 #### Tags and Taglibs
 
-As you get more fine grained tags, it starts to make sense to group them into categories such as: - button Tags - list tags - list item tags ...
+As you get more fine grained tags, it starts to make sense to group them into categories such as:
+
+-	button Tags
+-	list tags
+-	list item tags
+-	...
 
 In order to support this, you can use a special namespace feature `xxx:aaa` or `xxx:aaa-bb`
 
