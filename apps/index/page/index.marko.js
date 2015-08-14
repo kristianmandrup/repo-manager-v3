@@ -5,6 +5,7 @@ function create(__helpers) {
       __renderer = __helpers.r,
       _______global_components_icon_list_renderer_js = __renderer(require("../../_global/components/icon-list/renderer")),
       __tag = __helpers.t,
+      _______global_components_app_hello_template = __helpers.l(require.resolve("../../_global/components/app-hello/template")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -14,6 +15,8 @@ function create(__helpers) {
       {
         "items": data.items
       });
+
+    _______global_components_app_hello_template.render({"label": "Kris"}, out);
 
     out.w('<lasso-body></lasso-body>');
     __tag(out,

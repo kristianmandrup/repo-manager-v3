@@ -1,3 +1,6 @@
 {
-    "tags-dir": "./_global/components"
+    "tags-dir": "./_global/components",
+    "taglib-imports": [
+      "./_global/components/menu/marko-taglib.json"
+    ]
 }
