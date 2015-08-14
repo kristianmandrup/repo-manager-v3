@@ -5,3 +5,5 @@ temp
 dist
 */dist
 marko.js
+apps/*.json
+apps/_global/*.json
