@@ -42,38 +42,75 @@ Watch `.jade` and `.styl` files for changes and auto compile.
 
 Edit `.jade` and `.styl` files and see the browser auto refresh when you change the HTML ;)
 
-Note: You might (sometimes) need to run `gulp jade:marko` manually to force a recompile of all jade templates
+Note: You might need to run `gulp jade:marko` manually to force a recompile of all jade templates
 
 ### App file structure
 
 ```
 /apps
   /_global
-    /components
-      /link-button - global custom tag
-    /state
-      index.js - global state available all apps
-    /layouts
+    /components - custom taglibs and tags
+      /button
+        /link-button
+        ...
+        marko-taglib.json
+      /feed
+        /project-feed
+          marko-tag.json
+          renderer.js
+          template.jade
+          template.marko
+      /item
+        /link-item
+        ...
+        marko-taglib.json
+      /list
+        /icon-list
+        ...
+        marko-taglib.json
+      /menu
+        /main-menu
+        /session-menu
+        ...
+        marko-taglib.json
+      marko-taglib.json
+
+    /state - state available to all apps as $out.global
+      index.js
+      /menu
+        index.js
+        main-menu.js
+        session-menu.js
+        ...
+      /lists
+        index.js
+        users.js
+        repos.js
+        ...
+
+    /layouts - generic layouts
       layout.jade
-  /index
+
+  /index - app
     /components
-      /project-feed - custom tag
-        marko-tag.json
-        renderer.js
-        template.jade
-        template.marko
-    /layouts
+      marko-taglib.json
+
+    /layouts - special page layouts
       mobile.jade
-    /page
+
+    /page - page for app
       index.jade
       index.marko
       index.browser.json - lasso config file
       layout.jade - default layout for index app
-    /state
+
+    /state - state for index app, available as $data
       index.js - local state for index app only
+
     marko-taglib.json
-  /repositories
-  /teams
+
+  /repositories - app
+  /teams - app
   ...
 marko-taglib.json  
 ```
@@ -234,9 +271,19 @@ You can also import other taglibs into a taglib. This feature is used to include
 
 ```json
 {
-    "tags-dir": "./_global/components",
+    "tags-dir": "./components",
+}
+```
+
+Then for `/components/marko-taglib.json` we can import yet more taglibs.
+
+```json
+{
+    "tags-dir": ".",
     "taglib-imports": [
-      "./_global/components/menu/marko-taglib.json"
+      "./button/marko-taglib.json"
+      "./menu/marko-taglib.json",
+      ...
     ]
 }
 ```
