@@ -1,8 +1,6 @@
+// available in templates via: out.global
 module.exports = {
-  login: {
-    label: 'Login'
-  },
-  registration: {
-    label: 'Sign up'
-  }
+  menus: require('./menus'),
+  lists: require('./lists'),
+  feeds: require('./feeds')
 }
