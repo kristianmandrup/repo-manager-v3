@@ -19,6 +19,7 @@
         "./divider/marko-taglib.json",
         "./icon/marko-taglib.json",
         "./image/marko-taglib.json",
-        "./input/marko-taglib.json"
+        "./input/marko-taglib.json",
+        "./label/marko-taglib.json"
     ]
 }
