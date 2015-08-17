@@ -18,6 +18,7 @@
         "./flag/marko-taglib.json",
         "./divider/marko-taglib.json",
         "./icon/marko-taglib.json",
-        "./image/marko-taglib.json"
+        "./image/marko-taglib.json",
+        "./input/marko-taglib.json"
     ]
 }
