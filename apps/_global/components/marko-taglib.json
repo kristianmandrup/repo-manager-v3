@@ -15,6 +15,9 @@
         "./button/marko-taglib.json",
         "./segment/marko-taglib.json",
         "./header/marko-taglib.json",
-        "./flag/marko-taglib.json"
+        "./flag/marko-taglib.json",
+        "./divider/marko-taglib.json",
+        "./icon/marko-taglib.json",
+        "./image/marko-taglib.json"
     ]
 }
