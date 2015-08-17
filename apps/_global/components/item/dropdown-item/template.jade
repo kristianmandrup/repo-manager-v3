@@ -1,0 +1,6 @@
+div(class='ui $data.align dropdown item')
+  | $data.label
+  i.dropdown.icon
+  .menu
+    for(each='item in data.list')
+      .item $item.label
