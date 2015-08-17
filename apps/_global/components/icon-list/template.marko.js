@@ -8,7 +8,7 @@ function create(__helpers) {
       __tag = __helpers.t;
 
   return function render(data, out) {
-    out.w('<h1>LIST</h1><div class="ui list">');
+    out.w('<div class="ui list">');
 
     forEach(data.items, function(item) {
       __tag(out,

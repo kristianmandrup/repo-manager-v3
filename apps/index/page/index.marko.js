@@ -2,21 +2,26 @@ function create(__helpers) {
   var str = __helpers.s,
       empty = __helpers.e,
       notEmpty = __helpers.ne,
+      escapeXml = __helpers.x,
       __renderer = __helpers.r,
       _______global_components_icon_list_renderer_js = __renderer(require("../../_global/components/icon-list/renderer")),
       __tag = __helpers.t,
-      _______global_components_app_hello_template = __helpers.l(require.resolve("../../_global/components/app-hello/template")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
-    out.w('<!DOCTYPE html> <html><head><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="semantic.min.js">   </script><title>Title</title><lasso-head></lasso-head></head><body><h1>Repo Manager</h1>');
+    out.w('<!DOCTYPE html> <html><head><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script><script src="semantic.min.js">   </script><title>' +
+      escapeXml(data.title) +
+      '</title><lasso-head></lasso-head></head><body><h1>Repo Manager</h1>');
     __tag(out,
       _______global_components_icon_list_renderer_js,
       {
-        "items": data.items
+        "items": data.lists.users
       });
-
-    _______global_components_app_hello_template.render({"label": "Kris"}, out);
+    __tag(out,
+      _______global_components_icon_list_renderer_js,
+      {
+        "items": data.lists.repos
+      });
 
     out.w('<lasso-body></lasso-body>');
     __tag(out,
