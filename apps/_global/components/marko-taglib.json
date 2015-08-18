@@ -25,6 +25,9 @@
         "./rail/marko-taglib.json",
         "./step/marko-taglib.json",
         "./breadcrumb/marko-taglib.json",
-        "./form/marko-taglib.json"
+        "./form/marko-taglib.json",
+        "./grid/marko-taglib.json",
+        "./message/marko-taglib.json",
+        "./table/marko-taglib.json"
     ]
 }
