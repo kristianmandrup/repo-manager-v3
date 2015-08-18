@@ -20,6 +20,11 @@
         "./icon/marko-taglib.json",
         "./image/marko-taglib.json",
         "./input/marko-taglib.json",
-        "./label/marko-taglib.json"
+        "./label/marko-taglib.json",
+        "./loader/marko-taglib.json",
+        "./rail/marko-taglib.json",
+        "./step/marko-taglib.json",
+        "./breadcrumb/marko-taglib.json",
+        "./form/marko-taglib.json"
     ]
 }
