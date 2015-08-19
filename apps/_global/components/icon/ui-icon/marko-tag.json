@@ -1,3 +1,5 @@
 {
-    "@icon": "string"
+    "@icon": "string",
+    "@ui": "string",
+    "@tip": "string"
 }

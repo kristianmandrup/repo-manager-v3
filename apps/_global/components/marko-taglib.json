@@ -34,6 +34,10 @@
         "./card/marko-taglib.json",
         "./content/marko-taglib.json",
         "./comment/marko-taglib.json",
-        "./statistic/marko-taglib.json"
+        "./statistic/marko-taglib.json",
+        "./accordion/marko-taglib.json",
+        "./embed/marko-taglib.json",
+        "./modal/marko-taglib.json",
+        "./rating/marko-taglib.json"
     ]
 }

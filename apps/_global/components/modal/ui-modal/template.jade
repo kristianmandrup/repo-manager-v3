@@ -1,0 +1,15 @@
+div(class='ui $data.ui modal')
+  if(test='$data.header')
+    .header $data.header
+  if(test='$data.content')
+    .content
+      $data.content
+  if(test='$data.img')
+    .image.content
+      ui-image(attrs='$data.img')
+      .description
+        $data.img.caption
+  if(test='$data.actions')
+    .actions
+      for(each='action in data.actions')    
+        div(class='ui $action.ui button') $action.label
