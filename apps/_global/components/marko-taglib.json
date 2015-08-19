@@ -38,6 +38,10 @@
         "./accordion/marko-taglib.json",
         "./embed/marko-taglib.json",
         "./modal/marko-taglib.json",
-        "./rating/marko-taglib.json"
+        "./rating/marko-taglib.json",
+        "./sidebar/marko-taglib.json",
+        "./sticky/marko-taglib.json",
+        "./tab/marko-taglib.json",
+        "./shape/marko-taglib.json"
     ]
 }
