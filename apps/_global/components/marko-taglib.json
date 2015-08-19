@@ -33,6 +33,7 @@
         "./ad/marko-taglib.json",
         "./card/marko-taglib.json",
         "./content/marko-taglib.json",
-        "./comment/marko-taglib.json"
+        "./comment/marko-taglib.json",
+        "./statistic/marko-taglib.json"
     ]
 }
