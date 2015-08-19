@@ -28,6 +28,11 @@
         "./form/marko-taglib.json",
         "./grid/marko-taglib.json",
         "./message/marko-taglib.json",
-        "./table/marko-taglib.json"
+        "./table/marko-taglib.json",
+        "./banner/marko-taglib.json",
+        "./ad/marko-taglib.json",
+        "./card/marko-taglib.json",
+        "./content/marko-taglib.json",
+        "./comment/marko-taglib.json"
     ]
 }
