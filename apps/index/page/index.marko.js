@@ -4,26 +4,13 @@ function create(__helpers) {
       notEmpty = __helpers.ne,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      _______global_components_icon_list_renderer_js = __renderer(require("../../_global/components/icon-list/renderer")),
-      __tag = __helpers.t,
-      _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
+      _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag")),
+      __tag = __helpers.t;
 
   return function render(data, out) {
     out.w('<!DOCTYPE html> <html><head><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script><script src="semantic.min.js">   </script><title>' +
       escapeXml(data.title) +
-      '</title><lasso-head></lasso-head></head><body><h1>Repo Manager</h1>');
-    __tag(out,
-      _______global_components_icon_list_renderer_js,
-      {
-        "items": data.lists.users
-      });
-    __tag(out,
-      _______global_components_icon_list_renderer_js,
-      {
-        "items": data.lists.repos
-      });
-
-    out.w('<lasso-body></lasso-body>');
+      '</title><lasso-head></lasso-head></head><body><h1>Repo Manager</h1><icon-list items="data.lists.users"></icon-list><icon-list items="data.lists.repos"></icon-list><lasso-body></lasso-body>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {
