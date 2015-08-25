@@ -8,9 +8,13 @@
     <lasso-head></lasso-head>
   </head>
   <body>
-    <h1>Repo Manager</h1>
-    <icon-list items="data.lists.users"></icon-list>
-    <icon-list items="data.lists.repos"></icon-list>
+    <h1>$data.header  </h1>
+    <h2>$out.global.appName</h2>
+    <icon-list list="data.lists.users"></icon-list>
+    <icon-list list="out.global.lists.repos"></icon-list>
+    <ui-accordion>
+      <acc-block active="true" label="Yeah" text="hello world"></acc-block>
+    </ui-accordion>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

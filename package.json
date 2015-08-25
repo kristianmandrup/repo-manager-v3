@@ -27,7 +27,8 @@
   "dependencies": {
     "browser-refresh-taglib": "^1.0.3",
     "extend": "^3.0.0",
-    "marko": "^2.7.9",
+    "marko": "marko-js/marko#master",
+    "marko-tag-body": "^1.0.1",
     "marooka": "kristianmandrup/markoa#master"
   },
   "devDependencies": {
@@ -47,7 +48,7 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "jade": "^1.11.0",
-    "jade-marko": "^0.1.1",
+    "jade-marko": "^0.1.3",
     "jeet": "^6.1.2",
     "koa-browser-sync": "0.0.1",
     "nib": "^1.1.0",
