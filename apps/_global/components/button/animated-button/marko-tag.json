@@ -1,3 +1,4 @@
 {
-    "@label": "string"
+    "@label": "string",
+    "@icon": "string"
 }

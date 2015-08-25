@@ -1,3 +1,6 @@
 {
-    "@placeholder": "string"
+    "@placeholder": "string",
+    "@results": "string",
+    "@icon": "string",
+    "@ui": "string"
 }

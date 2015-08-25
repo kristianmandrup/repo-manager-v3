@@ -1,9 +1,9 @@
 a(class='$data.status step')
-  xif('${data.icon}')
+  xif(test='data.icon')
     ui-icon(icon='$data.icon')
-  xif('${data.hasContent}')
+  xif(test='data.hasContent')
     .content
-      xif('$data.label')
+      xif(test='data.label')
         .title $data.label
-      xif('$data.desc')
+      xif(test='data.desc')
         .description $data.desc

@@ -1,3 +1,7 @@
 {
-    "@label": "string"
+    "@ui": "string",
+    "@icon": "string",
+    "@status": "string",
+    "@header": "string",
+    "@text": "string"
 }

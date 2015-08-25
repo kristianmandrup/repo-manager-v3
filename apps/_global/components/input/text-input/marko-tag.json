@@ -1,9 +1,5 @@
 {
-    "@type": "string",
-    "@placeholder": "string",
-    "@focus": "string",
-    "@loading": "string",
-    "@error": "string",
+    "@ui": "string",
     "@icon": "string",
     "@action": "string",
     "@link": "string",

@@ -1,3 +1,4 @@
 {
-    "@list": "string"
+    "@list": "string",
+    "@ui": "string"    
 }

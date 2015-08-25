@@ -1,5 +1,4 @@
-div(class="${align menu}")
-  .item
-    link-button(link='${login.link}' label='${login.label}')
-  .item
-    link-button(link='${register.link}' type='primary' label='${register.label}') 
+div(class='ui $data.ui menu')
+  for(each='item in data.list')
+    .item
+      link-button(attrs='item')

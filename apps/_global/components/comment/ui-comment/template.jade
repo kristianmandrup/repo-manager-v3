@@ -6,8 +6,7 @@
     xif(test='$data.meta')
       .metadata
         span(class='$data.meta.ui') $data.meta.label
-    .text
-      | $data.text
+    div(class='text' tag-body='data.renderBody || data.text')
     xif(test='$data.actions')
       .actions
         for(each='action in data.actions')
