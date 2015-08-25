@@ -4,8 +4,9 @@ function create(__helpers) {
       notEmpty = __helpers.ne,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag")),
-      __tag = __helpers.t;
+      _______global_components_icon_list_renderer_js = __renderer(require("../../_global/components/icon-list/renderer")),
+      __tag = __helpers.t,
+      _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
     out.w('<!DOCTYPE html> <html><head><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script><script src="semantic.min.js">   </script><title>' +
@@ -14,7 +15,19 @@ function create(__helpers) {
       escapeXml(data.header) +
       ' </h1><h2>' +
       escapeXml(out.global.appName) +
-      '</h2><icon-list items="out.global.lists.users"></icon-list><icon-list items="out.global.lists.repos"></icon-list><lasso-body></lasso-body>');
+      '</h2>');
+    __tag(out,
+      _______global_components_icon_list_renderer_js,
+      {
+        "list": data.lists.users
+      });
+    __tag(out,
+      _______global_components_icon_list_renderer_js,
+      {
+        "list": out.global.lists.repos
+      });
+
+    out.w('<lasso-body></lasso-body>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {

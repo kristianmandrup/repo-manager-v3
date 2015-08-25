@@ -2,6 +2,6 @@ extends layout.jade
 block content
   h1 $data.header  
   h2 $out.global.appName
-  icon-list(items="out.global.lists.users")
-  icon-list(items="out.global.lists.repos")
+  icon-list(list="data.lists.users")
+  icon-list(list="out.global.lists.repos")
   
