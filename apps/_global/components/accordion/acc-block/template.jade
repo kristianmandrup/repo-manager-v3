@@ -1,5 +1,5 @@
 div(class='$data.status title')
-  xif('$data.icon')
+  xif(test='data.icon')
     ui-icon(attrs='$data.icon')
   | $data.label
 div(class='$data.status content')

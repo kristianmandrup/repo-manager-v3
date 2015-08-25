@@ -1,6 +1,12 @@
 {
   "tags-dir": ".",
   "taglib-imports": [
+    "./accordion/marko-taglib.json",
+    "./banner/marko-taglib.json",
+    "./bottom/marko-taglib.json",
+    "./button/marko-taglib.json",
+    "./breadcrumb/marko-taglib.json",
+    "./card/marko-taglib.json",    
     "./list/marko-taglib.json",
     "./item/marko-taglib.json",
     "./icon/marko-taglib.json"

@@ -1,14 +1,14 @@
 .comment
-  xif('$data.avatar')
+  xif(test='$data.avatar')
     avatar-img(attrs='$data.avatar')
   .content
     a.author Matt
-    xif('$data.meta')
+    xif(test='$data.meta')
       .metadata
         span(class='$data.meta.ui') $data.meta.label
     .text
       | $data.text
-    xif('$data.actions')
+    xif(test='$data.actions')
       .actions
         for(each='action in data.actions')
           a(class='$action.ui') $action.label

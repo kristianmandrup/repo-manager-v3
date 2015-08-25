@@ -1,15 +1,15 @@
 div(class='ui $data.ui modal')
-  xif('$data.header')
+  xif(test='$data.header')
     .header $data.header
-  xif('$data.content')
+  xif(test='$data.content')
     .content
       $data.content
-  xif('$data.img')
+  xif(test='$data.img')
     .image.content
       ui-image(attrs='$data.img')
       .description
         $data.img.caption
-  xif('$data.actions')
+  xif(test='$data.actions')
     .actions
       for(each='action in data.actions')    
         div(class='ui $action.ui button') $action.label

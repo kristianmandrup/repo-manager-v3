@@ -44,6 +44,10 @@ Edit `.jade` and `.styl` files and see the browser auto refresh when you change 
 
 Note: You might need to run `gulp jade:marko` manually to force a recompile of all jade templates
 
+Alternatively, start server using `MARKO_CLEAN=true` to ensure all templates are compiled!
+
+`MARKO_CLEAN=true node .`
+
 ### App file structure
 
 ```

@@ -1,7 +1,7 @@
 div(class='ui $data.size breadcrumb')
   for(each='item in data.list')
     a(class='$item.active section') $item.label
-    xif('data.icon')
+    xif(test='data.icon')
       ui-icon(icon='$data.icon divider' align='right')
     xelse
       .divider $data.divider

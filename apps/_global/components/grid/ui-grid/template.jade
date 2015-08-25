@@ -1,4 +1,4 @@
 div(class='ui $data.ui grid' w-body='')
-  xif('data.list')
+  xif(test='data.list')
     for(each='item in data.list')
       ui-column(attrs='$item')
