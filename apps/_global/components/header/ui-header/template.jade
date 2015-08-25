@@ -1,8 +1,8 @@
-if(test='$data.lv == 1')
+xif('$data.lv == 1')
   h1(class='ui header') $data.label
-else-if(test='$data.lv == 2')
+xelse-if('$data.lv == 2')
   h2(class='ui header') $data.label
-else(test='$data.lv == 3')
+xelse-if('$data.lv == 3')
   h3(class='ui header') $data.label
-else
+xelse
   h4(class='ui header') $data.label

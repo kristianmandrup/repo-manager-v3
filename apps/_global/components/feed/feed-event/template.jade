@@ -2,15 +2,15 @@
   .label
     img(src='$data.src')
   .content
-    if(test='$data.date')
+    xif('$data.date')
       .date
         $data.date
-    if(test='$data.content')
+    xif('$data.content')
       .summary
         $data.content
-    if(test='$data.meta')
+    xif('$data.meta')
       .meta
         $data.meta
-    if(test='$data.extra')
+    xif('$data.extra')
       .extra
         $data.extra

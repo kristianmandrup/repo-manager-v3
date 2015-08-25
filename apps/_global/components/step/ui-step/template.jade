@@ -1,7 +1,7 @@
 div(class='$data.status step')
   ui-icon(icon='$data.icon')
   .content
-    if(test='$data.label')
+    xif('$data.label')
       .title $data.label
-    if(test='$data.desc')
+    xif('$data.desc')
       .description $data.desc

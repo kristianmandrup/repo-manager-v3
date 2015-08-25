@@ -2,5 +2,6 @@
 module.exports = {
   menus: require('./menus'),
   lists: require('./lists'),
-  feeds: require('./feeds')
+  feeds: require('./feeds'),
+  appName: 'Repo Manager v3'
 }

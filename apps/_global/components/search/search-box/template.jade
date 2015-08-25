@@ -1,7 +1,7 @@
 div(class='ui $data.ui search')
   input.prompt(type='text', placeholder='${data.placeholder}')
-  if(test='$data.icon')
+  xif('$data.icon')
     ui-icon(attrs='$data.icon')
-  if(test='$data.results')
+  xif('$data.results')
     .results
       $data.results

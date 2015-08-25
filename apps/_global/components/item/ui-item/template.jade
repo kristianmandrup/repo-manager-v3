@@ -1,16 +1,16 @@
 .item 
-  if(test='$data.label')
+  xif('$data.label')
     $data.label
-  if(test='$data.icon')
+  xif('$data.icon')
     i(class='$data.icon icon')
-  if(test='$data.content')
+  xif('$data.content')
     .content
-      if(test='$data.link')
+      xif('$data.link')
         a(href='$data.link.url') ${data.link.label || data.link.url}
-      else
-        if(test='$data.header')
+      xelse
+        xif('$data.header')
           a.header $data.header
-        if(test='$data.desc')
+        xif('$data.desc')
           $data.desc
-        if(test='$data.content')
+        xif('$data.content')
           $data.content
