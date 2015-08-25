@@ -4,7 +4,7 @@ function create(__helpers) {
       notEmpty = __helpers.ne,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      _______global_components_icon_list_renderer_js = __renderer(require("../../_global/components/icon-list/renderer")),
+      _______global_components_list_icon_list_renderer_js = __renderer(require("../../_global/components/list/icon-list/renderer")),
       __tag = __helpers.t,
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
@@ -17,12 +17,12 @@ function create(__helpers) {
       escapeXml(out.global.appName) +
       '</h2>');
     __tag(out,
-      _______global_components_icon_list_renderer_js,
+      _______global_components_list_icon_list_renderer_js,
       {
         "list": data.lists.users
       });
     __tag(out,
-      _______global_components_icon_list_renderer_js,
+      _______global_components_list_icon_list_renderer_js,
       {
         "list": out.global.lists.repos
       });

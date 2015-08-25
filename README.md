@@ -288,6 +288,25 @@ Then for `/components/marko-taglib.json` we can import yet more taglibs.
 }
 ```
 
+We can also import taglibs from external modules...
+
+```json
+    "taglib-imports": ["./package.json"],
+```
+
+`package.json`
+
+```json
+{
+    "dependencies": {
+        "imported-foo": "^1.0.0",
+        "imported-bar": "^1.0.0"
+    }
+}
+```
+
+The taglibs will then be looked up as modules in `node_modules`.
+
 #### Multiple tags
 
 -	What is the name of your tag or tags (, separated) ? `top-menu, side-bar, session-bar`

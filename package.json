@@ -27,7 +27,7 @@
   "dependencies": {
     "browser-refresh-taglib": "^1.0.3",
     "extend": "^3.0.0",
-    "marko": "^2.7.9",
+    "marko": "marko-js/marko#master",
     "marooka": "kristianmandrup/markoa#master"
   },
   "devDependencies": {
