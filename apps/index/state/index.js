@@ -4,6 +4,16 @@ module.exports = {
     title: 'Repo manager',
     header: 'Repo manager',
     content: 'Hello',
+    breadcrumb: [
+      {
+        ui: 'active',
+        label: 'home'
+      },
+      {
+        ui: '',
+        label: 'away',
+      }
+    ],
     lists: {
       users: [{
         ui: 'large orange',

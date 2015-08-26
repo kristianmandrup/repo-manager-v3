@@ -12,6 +12,7 @@ function create(__helpers) {
       ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/acc-block/renderer")),
       ____________semantic_tags_semantic_components_banner_ui_banner_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/banner/ui-banner/renderer")),
       ____________semantic_tags_semantic_components_ad_google_ad_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/ad/google-ad/renderer")),
+      ____________semantic_tags_semantic_components_breadcrumb_ui_breadcrumb_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/breadcrumb/ui-breadcrumb/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -73,6 +74,12 @@ function create(__helpers) {
             "client": "ca-pub-XXXXXXXXXXXXXXXX",
             "slot": "XXXXXXXXXXXXXXXX"
           });
+      });
+    __tag(out,
+      ____________semantic_tags_semantic_components_breadcrumb_ui_breadcrumb_renderer_js,
+      {
+        "ui": "small",
+        "list": data.breadcrumb
       });
 
     out.w('<lasso-body></lasso-body>');
