@@ -10,6 +10,8 @@ function create(__helpers) {
       __tag = __helpers.t,
       ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/ui-accordion/renderer")),
       ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/acc-block/renderer")),
+      ____________semantic_tags_semantic_components_banner_ui_banner_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/banner/ui-banner/renderer")),
+      ____________semantic_tags_semantic_components_ad_google_ad_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/ad/google-ad/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -57,6 +59,19 @@ function create(__helpers) {
           },
           function(out) {
             out.w('OMG! I\'m the body of an accordion');
+          });
+      });
+    __tag(out,
+      ____________semantic_tags_semantic_components_banner_ui_banner_renderer_js,
+      {
+        "ui": "medium rectangle"
+      },
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_ad_google_ad_renderer_js,
+          {
+            "client": "ca-pub-XXXXXXXXXXXXXXXX",
+            "slot": "XXXXXXXXXXXXXXXX"
           });
       });
 
