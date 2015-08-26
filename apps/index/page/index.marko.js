@@ -6,10 +6,10 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_list_icon_list_renderer_js = __renderer(require("marko-semantic-ui-taglibs/semantic/components/list/icon-list/renderer")),
+      ____________semantic_tags_semantic_components_list_icon_list_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/list/icon-list/renderer")),
       __tag = __helpers.t,
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_accordion_ui_accordion_renderer_js = __renderer(require("marko-semantic-ui-taglibs/semantic/components/accordion/ui-accordion/renderer")),
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_accordion_acc_block_renderer_js = __renderer(require("marko-semantic-ui-taglibs/semantic/components/accordion/acc-block/renderer")),
+      ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/ui-accordion/renderer")),
+      ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/acc-block/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -25,25 +25,36 @@ function create(__helpers) {
       escapeXml(out.global.appName) +
       '</h2>');
     __tag(out,
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_list_icon_list_renderer_js,
       {
         "list": data.lists.users
       });
     __tag(out,
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_list_icon_list_renderer_js,
       {
         "list": out.global.lists.repos
       });
     __tag(out,
-      _________node_modules_marko_semantic_ui_taglibs_semantic_components_accordion_ui_accordion_renderer_js,
-      {},
+      ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js,
+      {
+        "ui": "large"
+      },
       function(out) {
         __tag(out,
-          _________node_modules_marko_semantic_ui_taglibs_semantic_components_accordion_acc_block_renderer_js,
+          ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
           {
             "active": "true",
-            "label": "Yeah",
-            "text": "hello world"
+            "label": "Hello there",
+            "text": "Page 1"
+          });
+        __tag(out,
+          ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
+          {
+            "active": "true",
+            "text": "Page 2"
+          },
+          function(out) {
+            out.w('<OMG>! I\'m the body of an accordion</OMG>');
           });
       });
 

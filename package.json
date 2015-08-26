@@ -28,7 +28,7 @@
     "browser-refresh-taglib": "^1.0.3",
     "extend": "^3.0.0",
     "marko": "marko-js/marko#master",
-    "marko-tag-body": "^1.0.1",
+    "marko-tag-body": "kristianmandrup/marko-tag-body#or-variant",
     "marko-semantic-ui-taglibs": "kristianmandrup/marko-semantic-ui-taglibs#master",
     "marooka": "kristianmandrup/markoa#master"
   },
