@@ -7,15 +7,19 @@ module.exports = {
     lists: {
       users: [{
         ui: 'large orange',
-        icon: 'user',
+        icon: {
+          name: 'user'
+        },
         label: 'kmandrup',
-        desc: 'I DREAM in CODE'
+        body: 'I DREAM in CODE'
       },
       {
         ui: 'large blue',
-        icon: 'user',
+        icon: {
+          name: 'user'
+        },
         label: 'isaura',
-        desc: 'I LOVE web DESIGN'
+        body: 'I LOVE web DESIGN'
       }]
     }
   }
