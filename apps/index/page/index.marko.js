@@ -37,24 +37,26 @@ function create(__helpers) {
     __tag(out,
       ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js,
       {
-        "ui": "large"
+        "inverted": true,
+        "ui": "styled"
       },
       function(out) {
         __tag(out,
           ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
           {
             "active": "true",
-            "label": "Hello there",
-            "text": "Page 1"
+            "label": "tab1"
+          },
+          function(out) {
+            out.w('Page 1');
           });
         __tag(out,
           ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
           {
-            "active": "true",
-            "text": "Page 2"
+            "label": "tab2"
           },
           function(out) {
-            out.w('<OMG>! I\'m the body of an accordion</OMG>');
+            out.w('OMG! I\'m the body of an accordion');
           });
       });
 

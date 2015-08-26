@@ -13,11 +13,9 @@
     <h2>$out.global.appName</h2>
     <icon-list list="data.lists.users"></icon-list>
     <icon-list list="out.global.lists.repos"></icon-list>
-    <ui-accordion ui="large">
-      <acc-block active="true" label="Hello there" text="Page 1"></acc-block>
-      <acc-block active="true" text="Page 2">
-        <OMG>! I'm the body of an accordion</OMG>
-      </acc-block>
+    <ui-accordion inverted="true" ui="styled">
+      <acc-block active="true" label="tab1">Page 1</acc-block>
+      <acc-block label="tab2">OMG! I'm the body of an accordion</acc-block>
     </ui-accordion>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
