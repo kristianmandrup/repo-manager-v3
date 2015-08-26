@@ -1,5 +1,6 @@
 module.exports = {
   page: {
+    name: 'index',
     title: 'Repo manager',
     header: 'Repo manager',
     content: 'Hello',
