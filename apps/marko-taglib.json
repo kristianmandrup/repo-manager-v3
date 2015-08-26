@@ -1,5 +1,6 @@
 {
   "taglib-imports": [
-    "./_global/components/marko-taglib.json"
-  ]  
+    "./_global/components/marko-taglib.json",
+    "../package.json"
+  ]
 }

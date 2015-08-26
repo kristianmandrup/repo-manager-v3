@@ -1,7 +1,0 @@
-{
-    "@ui": "string",
-    "@avatar": "string",
-    "@body": "string",
-    "@meta": "string",
-    "@actions": "array"
-}
