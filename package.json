@@ -29,6 +29,7 @@
     "extend": "^3.0.0",
     "marko": "marko-js/marko#master",
     "marko-tag-body": "^1.0.1",
+    "marko-semantic-ui-taglibs": "kristianmandrup/marko-semantic-ui-taglibs#master",
     "marooka": "kristianmandrup/markoa#master"
   },
   "devDependencies": {
