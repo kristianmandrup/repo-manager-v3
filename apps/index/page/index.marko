@@ -11,16 +11,10 @@
   <body>
     <h1>$data.header  </h1>
     <h2>$out.global.appName</h2>
-    <icon-list list="data.lists.users"></icon-list>
-    <icon-list list="out.global.lists.repos"></icon-list>
-    <ui-accordion inverted="true" ui="styled">
-      <acc-block active="true" label="tab1">Page 1</acc-block>
-      <acc-block label="tab2">OMG! I'm the body of an accordion</acc-block>
-    </ui-accordion>
-    <ui-banner ui="medium rectangle">
-      <google-ad client="ca-pub-XXXXXXXXXXXXXXXX" slot="XXXXXXXXXXXXXXXX"></google-ad>
-    </ui-banner>
-    <ui-breadcrumb ui="small" list="data.breadcrumb"></ui-breadcrumb>
+    <ui-btn ui="large red" label="warning"></ui-btn>
+    <submit-btn ui="large blue" label="go baby!"></submit-btn>
+    <link-btn ui="large violet" label="go baby!" link="google.com"></link-btn>
+    <icon-btn ui="large green" label="go baby!" name="user"></icon-btn>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

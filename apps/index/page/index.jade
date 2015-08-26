@@ -2,13 +2,7 @@ extends layout.jade
 block content
   h1 $data.header  
   h2 $out.global.appName
-  icon-list(list="data.lists.users")
-  icon-list(list="out.global.lists.repos")
-  ui-accordion(inverted='true' ui='styled')
-    acc-block(active='true' label='tab1')
-      | Page 1
-    acc-block(label='tab2')
-      | OMG! I'm the body of an accordion
-  ui-banner(ui='medium rectangle')
-    google-ad(client='ca-pub-XXXXXXXXXXXXXXXX' slot='XXXXXXXXXXXXXXXX')
-  ui-breadcrumb(ui='small' list='data.breadcrumb')
+  ui-btn(ui='large red' label='warning')
+  submit-btn(ui='large blue' label='go baby!')
+  link-btn(ui='large violet' label='go baby!' link='google.com')
+  icon-btn(ui='large green' label='go baby!' name='user')

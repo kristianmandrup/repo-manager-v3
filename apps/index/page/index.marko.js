@@ -6,13 +6,11 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      ____________semantic_tags_semantic_components_list_icon_list_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/list/icon-list/renderer")),
+      ____________semantic_tags_semantic_components_button_ui_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/ui-btn/renderer")),
       __tag = __helpers.t,
-      ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/ui-accordion/renderer")),
-      ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/accordion/acc-block/renderer")),
-      ____________semantic_tags_semantic_components_banner_ui_banner_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/banner/ui-banner/renderer")),
-      ____________semantic_tags_semantic_components_ad_google_ad_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/ad/google-ad/renderer")),
-      ____________semantic_tags_semantic_components_breadcrumb_ui_breadcrumb_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/breadcrumb/ui-breadcrumb/renderer")),
+      ____________semantic_tags_semantic_components_button_submit_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/submit-btn/renderer")),
+      ____________semantic_tags_semantic_components_button_link_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/link-btn/renderer")),
+      ____________semantic_tags_semantic_components_button_icon_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/icon-btn/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -28,58 +26,30 @@ function create(__helpers) {
       escapeXml(out.global.appName) +
       '</h2>');
     __tag(out,
-      ____________semantic_tags_semantic_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_button_ui_btn_renderer_js,
       {
-        "list": data.lists.users
+        "ui": "large red",
+        "label": "warning"
       });
     __tag(out,
-      ____________semantic_tags_semantic_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_button_submit_btn_renderer_js,
       {
-        "list": out.global.lists.repos
+        "ui": "large blue",
+        "label": "go baby!"
       });
     __tag(out,
-      ____________semantic_tags_semantic_components_accordion_ui_accordion_renderer_js,
+      ____________semantic_tags_semantic_components_button_link_btn_renderer_js,
       {
-        "inverted": true,
-        "ui": "styled"
-      },
-      function(out) {
-        __tag(out,
-          ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
-          {
-            "active": "true",
-            "label": "tab1"
-          },
-          function(out) {
-            out.w('Page 1');
-          });
-        __tag(out,
-          ____________semantic_tags_semantic_components_accordion_acc_block_renderer_js,
-          {
-            "label": "tab2"
-          },
-          function(out) {
-            out.w('OMG! I\'m the body of an accordion');
-          });
+        "ui": "large violet",
+        "label": "go baby!",
+        "link": "google.com"
       });
     __tag(out,
-      ____________semantic_tags_semantic_components_banner_ui_banner_renderer_js,
+      ____________semantic_tags_semantic_components_button_icon_btn_renderer_js,
       {
-        "ui": "medium rectangle"
-      },
-      function(out) {
-        __tag(out,
-          ____________semantic_tags_semantic_components_ad_google_ad_renderer_js,
-          {
-            "client": "ca-pub-XXXXXXXXXXXXXXXX",
-            "slot": "XXXXXXXXXXXXXXXX"
-          });
-      });
-    __tag(out,
-      ____________semantic_tags_semantic_components_breadcrumb_ui_breadcrumb_renderer_js,
-      {
-        "ui": "small",
-        "list": data.breadcrumb
+        "ui": "large green",
+        "label": "go baby!",
+        "name": "user"
       });
 
     out.w('<lasso-body></lasso-body>');
