@@ -4,13 +4,7 @@ block content
   h2 $out.global.appName
   h3 Basic field
   ui-form
-    line-input(name='username' field='User name')
-    check-box(name='male' checked='true' field='Male')
-    drop-down(name='coolSkills' list='data.skills' field='Skills')
-    multi-select(name='mySkills' list='data.skills' field='Skills')
-    radio-btn(name='work' value='yes' label='work' field='yes')
-    radio-btn(name='work' value='no' label='work' field='yes')
-    text-area(name='text' placeholder='Your text' rows='10' field='Text')
+    check-boxes(list='data.languages' label='Languages')
 
   h3 User form
   ui-form

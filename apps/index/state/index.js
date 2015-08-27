@@ -4,6 +4,24 @@ module.exports = {
     title: 'Repo manager',
     header: 'Repo manager',
     content: 'Hello',
+    languages: [
+      {
+        value: 'spanish'
+      },
+      {
+        value: 'english'
+      }
+    ],
+    work: [
+      {
+        value: 'no',
+        field: 'No'
+      },
+      {
+        value: 'yes',
+        field: 'Yes'
+      }
+    ],
     skills: [
       {
         label: 'Speaking',
