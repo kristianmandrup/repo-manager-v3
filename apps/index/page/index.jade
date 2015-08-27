@@ -1,19 +1,7 @@
 extends layout.jade
 block content
-  h1 $data.header  
-  h2 $out.global.appName
-  h3 Basic field
+  h3 Sliders
   ui-form
-    check-boxes(list='data.languages' label='Languages')
-
-  h3 User form
-  ui-form
-    ui-fields(list='data.userForm')
-
-  h3 Custom form
-  ui-form
-    ui-fields
-      ui-field(ui='small blue' label='Username')
-        line-input(name='username')
-      ui-field(ui='small green' label='Secret')
-        line-input(name='secret' type='password')
+    check-box(name='male' checked='true' field='Male' type='slider')
+    check-box(name='male' checked='true' field='Male')
+    check-box(name='male' checked='true' field='Male' type='toggle')

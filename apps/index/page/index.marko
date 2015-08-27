@@ -9,26 +9,11 @@
     <lasso-head></lasso-head>
   </head>
   <body>
-    <h1>$data.header  </h1>
-    <h2>$out.global.appName</h2>
-    <h3>Basic field</h3>
+    <h3>Sliders</h3>
     <ui-form>
-      <check-boxes list="data.languages" label="Languages"></check-boxes>
-    </ui-form>
-    <h3>User form</h3>
-    <ui-form>
-      <ui-fields list="data.userForm"></ui-fields>
-    </ui-form>
-    <h3>Custom form</h3>
-    <ui-form>
-      <ui-fields>
-        <ui-field ui="small blue" label="Username">
-          <line-input name="username"></line-input>
-        </ui-field>
-        <ui-field ui="small green" label="Secret">
-          <line-input name="secret" type="password"></line-input>
-        </ui-field>
-      </ui-fields>
+      <check-box name="male" checked="true" field="Male" type="slider"></check-box>
+      <check-box name="male" checked="true" field="Male"></check-box>
+      <check-box name="male" checked="true" field="Male" type="toggle"></check-box>
     </ui-form>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
