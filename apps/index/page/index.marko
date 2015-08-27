@@ -11,17 +11,27 @@
   <body>
     <h1>$data.header  </h1>
     <h2>$out.global.appName</h2>
-    <ui-card>
-      <card-content header="card one" meta="here we go"></card-content>
-    </ui-card>
-    <h3>CARDS</h3>
-    <ui-cards>
-      <ui-card>
-        <card-content header="card one" meta="here we go"></card-content>
-      </ui-card>
-    </ui-cards>
-    <ui-comment content="data.myComment"></ui-comment>
-    <ui-comments list="data.comments"></ui-comments>
+    <h3>Basic field</h3>
+    <ui-form>
+      <ui-field ui="large" label="First name">
+        <line-input name="username"></line-input>
+      </ui-field>
+    </ui-form>
+    <h3>User form</h3>
+    <ui-form>
+      <ui-fields list="data.userForm"></ui-fields>
+    </ui-form>
+    <h3>Custom form</h3>
+    <ui-form>
+      <ui-fields>
+        <ui-field ui="small blue" label="Username">
+          <line-input name="username"></line-input>
+        </ui-field>
+        <ui-field ui="small green" label="Secret">
+          <line-input name="secret" type="password"></line-input>
+        </ui-field>
+      </ui-fields>
+    </ui-form>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

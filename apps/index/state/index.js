@@ -14,6 +14,16 @@ module.exports = {
         label: 'away',
       }
     ],
+    userForm: [
+      {
+        name: 'username'
+        label: 'Username'
+      },
+      {
+        label: 'Secret',
+        type: 'password'
+      }
+    ],
     myComment: {
       text: 'hello there',
       author: 'kmandrup'

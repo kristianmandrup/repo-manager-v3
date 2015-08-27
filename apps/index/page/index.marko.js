@@ -6,12 +6,11 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      ____________semantic_tags_semantic_components_card_ui_card_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/card/ui-card/renderer")),
+      ____________semantic_tags_semantic_components_form_ui_form_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/ui-form/renderer")),
       __tag = __helpers.t,
-      ____________semantic_tags_semantic_components_content_card_content_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/content/card-content/renderer")),
-      ____________semantic_tags_semantic_components_card_ui_cards_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/card/ui-cards/renderer")),
-      ____________semantic_tags_semantic_components_comment_ui_comment_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/comment/ui-comment/renderer")),
-      ____________semantic_tags_semantic_components_comment_ui_comments_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/comment/ui-comments/renderer")),
+      ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/field/ui-field/renderer")),
+      ____________semantic_tags_semantic_components_form_input_line_input_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/input/line-input/renderer")),
+      ____________semantic_tags_semantic_components_form_field_ui_fields_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/field/ui-fields/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -25,45 +24,75 @@ function create(__helpers) {
       escapeXml(data.header) +
       ' </h1><h2>' +
       escapeXml(out.global.appName) +
-      '</h2>');
+      '</h2><h3>Basic field</h3>');
     __tag(out,
-      ____________semantic_tags_semantic_components_card_ui_card_renderer_js,
+      ____________semantic_tags_semantic_components_form_ui_form_renderer_js,
       {},
       function(out) {
         __tag(out,
-          ____________semantic_tags_semantic_components_content_card_content_renderer_js,
+          ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js,
           {
-            "header": "card one",
-            "meta": "here we go"
-          });
-      });
-
-    out.w('<h3>CARDS</h3>');
-    __tag(out,
-      ____________semantic_tags_semantic_components_card_ui_cards_renderer_js,
-      {},
-      function(out) {
-        __tag(out,
-          ____________semantic_tags_semantic_components_card_ui_card_renderer_js,
-          {},
+            "ui": "large",
+            "label": "First name"
+          },
           function(out) {
             __tag(out,
-              ____________semantic_tags_semantic_components_content_card_content_renderer_js,
+              ____________semantic_tags_semantic_components_form_input_line_input_renderer_js,
               {
-                "header": "card one",
-                "meta": "here we go"
+                "name": "username"
               });
           });
       });
+
+    out.w('<h3>User form</h3>');
     __tag(out,
-      ____________semantic_tags_semantic_components_comment_ui_comment_renderer_js,
-      {
-        "content": data.myComment
+      ____________semantic_tags_semantic_components_form_ui_form_renderer_js,
+      {},
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_form_field_ui_fields_renderer_js,
+          {
+            "list": data.userForm
+          });
       });
+
+    out.w('<h3>Custom form</h3>');
     __tag(out,
-      ____________semantic_tags_semantic_components_comment_ui_comments_renderer_js,
-      {
-        "list": data.comments
+      ____________semantic_tags_semantic_components_form_ui_form_renderer_js,
+      {},
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_form_field_ui_fields_renderer_js,
+          {},
+          function(out) {
+            __tag(out,
+              ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js,
+              {
+                "ui": "small blue",
+                "label": "Username"
+              },
+              function(out) {
+                __tag(out,
+                  ____________semantic_tags_semantic_components_form_input_line_input_renderer_js,
+                  {
+                    "name": "username"
+                  });
+              });
+            __tag(out,
+              ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js,
+              {
+                "ui": "small green",
+                "label": "Secret"
+              },
+              function(out) {
+                __tag(out,
+                  ____________semantic_tags_semantic_components_form_input_line_input_renderer_js,
+                  {
+                    "name": "secret",
+                    "type": "password"
+                  });
+              });
+          });
       });
 
     out.w('<lasso-body></lasso-body>');

@@ -2,13 +2,19 @@ extends layout.jade
 block content
   h1 $data.header  
   h2 $out.global.appName
-  ui-card
-    card-content(header='card one' meta='here we go')
-  h3 CARDS
-  ui-cards
-    ui-card
-      card-content(header='card one' meta='here we go')
-  ui-comment(content='data.myComment')
-  ui-comments(list='data.comments')
-  
-  
+  h3 Basic field
+  ui-form
+    ui-field(ui='large' label='First name')
+      line-input(name='username')
+
+  h3 User form
+  ui-form
+    ui-fields(list='data.userForm')
+
+  h3 Custom form
+  ui-form
+    ui-fields
+      ui-field(ui='small blue' label='Username')
+        line-input(name='username')
+      ui-field(ui='small green' label='Secret')
+        line-input(name='secret' type='password')
