@@ -4,6 +4,16 @@ module.exports = {
     title: 'Repo manager',
     header: 'Repo manager',
     content: 'Hello',
+    skills: [
+      {
+        label: 'Speaking',
+        value: 'speak'
+      },
+      {
+        label: 'Reading',
+        value: 'read'
+      }
+    ],
     breadcrumb: [
       {
         ui: 'active',
@@ -11,12 +21,12 @@ module.exports = {
       },
       {
         ui: '',
-        label: 'away',
+        label: 'away'
       }
     ],
     userForm: [
       {
-        name: 'username'
+        name: 'username',
         label: 'Username'
       },
       {

@@ -13,12 +13,13 @@
     <h2>$out.global.appName</h2>
     <h3>Basic field</h3>
     <ui-form>
-      <ui-field ui="large" label="First name">
-        <line-input name="username"></line-input>
-        <ui-field ui="large" label="Male">
-          <check-box name="male" checked="true"></check-box>
-        </ui-field>
-      </ui-field>
+      <line-input name="username" field="User name"></line-input>
+      <check-box name="male" checked="true" field="Male"></check-box>
+      <drop-down name="coolSkills" list="data.skills" field="Skills"></drop-down>
+      <multi-select name="mySkills" list="data.skills" field="Skills"></multi-select>
+      <radio-btn name="work" value="yes" label="work" field="yes"></radio-btn>
+      <radio-btn name="work" value="no" label="work" field="yes"></radio-btn>
+      <text-area name="text" placeholder="Your text" rows="10" field="Text"></text-area>
     </ui-form>
     <h3>User form</h3>
     <ui-form>
