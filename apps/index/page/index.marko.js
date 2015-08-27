@@ -10,6 +10,7 @@ function create(__helpers) {
       __tag = __helpers.t,
       ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/field/ui-field/renderer")),
       ____________semantic_tags_semantic_components_form_input_line_input_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/input/line-input/renderer")),
+      ____________semantic_tags_semantic_components_form_input_check_box_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/input/check-box/renderer")),
       ____________semantic_tags_semantic_components_form_field_ui_fields_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/form/field/ui-fields/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
@@ -40,6 +41,20 @@ function create(__helpers) {
               ____________semantic_tags_semantic_components_form_input_line_input_renderer_js,
               {
                 "name": "username"
+              });
+            __tag(out,
+              ____________semantic_tags_semantic_components_form_field_ui_field_renderer_js,
+              {
+                "ui": "large",
+                "label": "Male"
+              },
+              function(out) {
+                __tag(out,
+                  ____________semantic_tags_semantic_components_form_input_check_box_renderer_js,
+                  {
+                    "name": "male",
+                    "checked": true
+                  });
               });
           });
       });
