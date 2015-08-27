@@ -14,6 +14,20 @@ module.exports = {
         label: 'away',
       }
     ],
+    myComment: {
+      text: 'hello there',
+      author: 'kmandrup'
+    },
+    comments: [
+      {
+        text: 'hello there',
+        author: 'kmandrup'
+      },
+      {
+        text: 'howdy baby!',
+        author: 'kmandrup'
+      }
+    ],
     iconBtns: [
       {
         ui: 'small blue',

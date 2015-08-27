@@ -2,7 +2,13 @@ extends layout.jade
 block content
   h1 $data.header  
   h2 $out.global.appName
-  icon-btn(name='user' label='hello')
-  h3 GROUP
-  icon-group-btn(ui='large')
-    icon-btn(name='user' label='hello')
+  ui-card
+    card-content(header='card one' meta='here we go')
+  h3 CARDS
+  ui-cards
+    ui-card
+      card-content(header='card one' meta='here we go')
+  ui-comment(content='data.myComment')
+  ui-comments(list='data.comments')
+  
+  

@@ -6,9 +6,12 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      ____________semantic_tags_semantic_components_button_icon_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/icon-btn/renderer")),
+      ____________semantic_tags_semantic_components_card_ui_card_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/card/ui-card/renderer")),
       __tag = __helpers.t,
-      ____________semantic_tags_semantic_components_button_icon_group_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/icon-group-btn/renderer")),
+      ____________semantic_tags_semantic_components_content_card_content_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/content/card-content/renderer")),
+      ____________semantic_tags_semantic_components_card_ui_cards_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/card/ui-cards/renderer")),
+      ____________semantic_tags_semantic_components_comment_ui_comment_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/comment/ui-comment/renderer")),
+      ____________semantic_tags_semantic_components_comment_ui_comments_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/comment/ui-comments/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -24,25 +27,43 @@ function create(__helpers) {
       escapeXml(out.global.appName) +
       '</h2>');
     __tag(out,
-      ____________semantic_tags_semantic_components_button_icon_btn_renderer_js,
-      {
-        "name": "user",
-        "label": "hello"
-      });
-
-    out.w('<h3>GROUP</h3>');
-    __tag(out,
-      ____________semantic_tags_semantic_components_button_icon_group_btn_renderer_js,
-      {
-        "ui": "large"
-      },
+      ____________semantic_tags_semantic_components_card_ui_card_renderer_js,
+      {},
       function(out) {
         __tag(out,
-          ____________semantic_tags_semantic_components_button_icon_btn_renderer_js,
+          ____________semantic_tags_semantic_components_content_card_content_renderer_js,
           {
-            "name": "user",
-            "label": "hello"
+            "header": "card one",
+            "meta": "here we go"
           });
+      });
+
+    out.w('<h3>CARDS</h3>');
+    __tag(out,
+      ____________semantic_tags_semantic_components_card_ui_cards_renderer_js,
+      {},
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_card_ui_card_renderer_js,
+          {},
+          function(out) {
+            __tag(out,
+              ____________semantic_tags_semantic_components_content_card_content_renderer_js,
+              {
+                "header": "card one",
+                "meta": "here we go"
+              });
+          });
+      });
+    __tag(out,
+      ____________semantic_tags_semantic_components_comment_ui_comment_renderer_js,
+      {
+        "content": data.myComment
+      });
+    __tag(out,
+      ____________semantic_tags_semantic_components_comment_ui_comments_renderer_js,
+      {
+        "list": data.comments
       });
 
     out.w('<lasso-body></lasso-body>');

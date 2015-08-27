@@ -11,11 +11,17 @@
   <body>
     <h1>$data.header  </h1>
     <h2>$out.global.appName</h2>
-    <icon-btn name="user" label="hello"></icon-btn>
-    <h3>GROUP</h3>
-    <icon-group-btn ui="large">
-      <icon-btn name="user" label="hello"></icon-btn>
-    </icon-group-btn>
+    <ui-card>
+      <card-content header="card one" meta="here we go"></card-content>
+    </ui-card>
+    <h3>CARDS</h3>
+    <ui-cards>
+      <ui-card>
+        <card-content header="card one" meta="here we go"></card-content>
+      </ui-card>
+    </ui-cards>
+    <ui-comment content="data.myComment"></ui-comment>
+    <ui-comments list="data.comments"></ui-comments>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>
