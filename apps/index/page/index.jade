@@ -2,7 +2,7 @@ extends layout.jade
 block content
   h1 $data.header  
   h2 $out.global.appName
-  ui-btn(ui='large red' label='warning')
-  submit-btn(ui='large blue' label='go baby!')
-  link-btn(ui='large violet' label='go baby!' link='google.com')
-  icon-btn(ui='large green' label='go baby!' name='user')
+  icon-btn(name='user' label='hello')
+  h3 GROUP
+  icon-group-btn(ui='large')
+    icon-btn(name='user' label='hello')

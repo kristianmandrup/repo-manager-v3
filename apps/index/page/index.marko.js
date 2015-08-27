@@ -6,11 +6,9 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      ____________semantic_tags_semantic_components_button_ui_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/ui-btn/renderer")),
-      __tag = __helpers.t,
-      ____________semantic_tags_semantic_components_button_submit_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/submit-btn/renderer")),
-      ____________semantic_tags_semantic_components_button_link_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/link-btn/renderer")),
       ____________semantic_tags_semantic_components_button_icon_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/icon-btn/renderer")),
+      __tag = __helpers.t,
+      ____________semantic_tags_semantic_components_button_icon_group_btn_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/button/icon-group-btn/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -26,30 +24,25 @@ function create(__helpers) {
       escapeXml(out.global.appName) +
       '</h2>');
     __tag(out,
-      ____________semantic_tags_semantic_components_button_ui_btn_renderer_js,
-      {
-        "ui": "large red",
-        "label": "warning"
-      });
-    __tag(out,
-      ____________semantic_tags_semantic_components_button_submit_btn_renderer_js,
-      {
-        "ui": "large blue",
-        "label": "go baby!"
-      });
-    __tag(out,
-      ____________semantic_tags_semantic_components_button_link_btn_renderer_js,
-      {
-        "ui": "large violet",
-        "label": "go baby!",
-        "link": "google.com"
-      });
-    __tag(out,
       ____________semantic_tags_semantic_components_button_icon_btn_renderer_js,
       {
-        "ui": "large green",
-        "label": "go baby!",
-        "name": "user"
+        "name": "user",
+        "label": "hello"
+      });
+
+    out.w('<h3>GROUP</h3>');
+    __tag(out,
+      ____________semantic_tags_semantic_components_button_icon_group_btn_renderer_js,
+      {
+        "ui": "large"
+      },
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_button_icon_btn_renderer_js,
+          {
+            "name": "user",
+            "label": "hello"
+          });
       });
 
     out.w('<lasso-body></lasso-body>');

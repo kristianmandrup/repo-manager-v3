@@ -11,10 +11,11 @@
   <body>
     <h1>$data.header  </h1>
     <h2>$out.global.appName</h2>
-    <ui-btn ui="large red" label="warning"></ui-btn>
-    <submit-btn ui="large blue" label="go baby!"></submit-btn>
-    <link-btn ui="large violet" label="go baby!" link="google.com"></link-btn>
-    <icon-btn ui="large green" label="go baby!" name="user"></icon-btn>
+    <icon-btn name="user" label="hello"></icon-btn>
+    <h3>GROUP</h3>
+    <icon-group-btn ui="large">
+      <icon-btn name="user" label="hello"></icon-btn>
+    </icon-group-btn>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

@@ -14,6 +14,18 @@ module.exports = {
         label: 'away',
       }
     ],
+    iconBtns: [
+      {
+        ui: 'small blue',
+        name: 'user',
+        label: 'hit me'
+      },
+      {
+        ui: 'small lightblue',
+        name: 'github',
+        label: 'smack me'
+      }
+    ],
     lists: {
       users: [{
         ui: 'large orange',
