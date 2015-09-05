@@ -1,7 +1,6 @@
 extends ../layouts/index-layout.jade
 block content
-  h3 Sliders
-  ui-form
-    check-box(name='male' checked='true' field='Male' type='slider')
-    check-box(name='male' checked='true' field='Male')
-    check-box(name='male' checked='true' field='Male' type='toggle')
+  top-menu(ui='main fixed inverted borderless' list='data.top.menu')          
+  ui-sidebar(ui='left vertical inverted labeled icon')
+    sidebar-menus(menus='data.sidebar.menus')
+  menu-button(ui='black big' data-transition="overlay")
