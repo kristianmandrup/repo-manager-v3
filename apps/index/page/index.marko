@@ -1,5 +1,5 @@
 
-<lasso-page name="$data.name" package-path="./${data.name}.browser.json"></lasso-page><!DOCTYPE html>
+<lasso-page name="$data.name" package-path="./dependencies/${data.name}.browser.json"></lasso-page><!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="semantic.min.css">
@@ -9,12 +9,11 @@
     <lasso-head></lasso-head>
   </head>
   <body>
-    <h3>Sliders</h3>
-    <ui-form>
-      <check-box name="male" checked="true" field="Male" type="slider"></check-box>
-      <check-box name="male" checked="true" field="Male"></check-box>
-      <check-box name="male" checked="true" field="Male" type="toggle"></check-box>
-    </ui-form>
+    <top-menu ui="main fixed inverted borderless" menu="data.top.menu"></top-menu>
+    <ui-sidebar ui="left vertical inverted labeled icon">
+      <sidebar-menus menus="data.sidebar.menus"></sidebar-menus>
+    </ui-sidebar>
+    <!-- menu-button(ui='black big' data-transition="overlay")-->
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>
