@@ -10,6 +10,7 @@ function create(__helpers) {
       __tag = __helpers.t,
       ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/ui-sidebar/renderer")),
       ____________semantic_tags_semantic_components_sidebar_sidebar_menus_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/sidebar-menus/renderer")),
+      ____________semantic_tags_semantic_components_menu_menu_button_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/menu-button/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -37,6 +38,12 @@ function create(__helpers) {
           {
             "menus": data.sidebar.menus
           });
+      });
+    __tag(out,
+      ____________semantic_tags_semantic_components_menu_menu_button_renderer_js,
+      {
+        "ui": "black big",
+        "transition": "overlay"
       });
 
     out.w('<lasso-body></lasso-body>');

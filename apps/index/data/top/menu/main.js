@@ -1,6 +1,7 @@
 module.exports = [{
     label: 'Home',
-    link: '/'
+    link: '/',
+    active: true
   },
   {
     label: 'Projects',
