@@ -2,7 +2,7 @@ module.exports = {
   page: {
     name: 'index',
     title: 'Repo manager',
-    top: require('./index'),
-    sidebar: require('./index')
+    top: require('./top'),
+    sidebar: require('./sidebar')
   }
 }
