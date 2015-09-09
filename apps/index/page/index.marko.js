@@ -8,6 +8,7 @@ function create(__helpers) {
       __tag = __helpers.t,
       ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/ui-sidebar/renderer")),
       ____________semantic_tags_semantic_components_sidebar_sidebar_menus_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/sidebar-menus/renderer")),
+      ____________semantic_tags_semantic_components_menu_menu_container_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/menu-container/renderer")),
       ____________semantic_tags_semantic_components_menu_top_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/top-menu/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
@@ -24,7 +25,7 @@ function create(__helpers) {
     __tag(out,
       ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js,
       {
-        "ui": "left vertical inverted labeled icon"
+        "ui": "left inverted labeled icon"
       },
       function(out) {
         __tag(out,
@@ -34,15 +35,21 @@ function create(__helpers) {
           });
       });
 
-    out.w('<div class="pusher"><div class="ui sticky inverted vertical center aligned segment"><div class="ui container">');
+    out.w('<div class="pusher">');
     __tag(out,
-      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
+      ____________semantic_tags_semantic_components_menu_menu_container_renderer_js,
       {
-        "ui": "",
-        "menu": data.top.menu
+        "ui": "top-menu sticky center aligned"
+      },
+      function(out) {
+        __tag(out,
+          ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
+          {
+            "menu": data.top.menu
+          });
       });
 
-    out.w('</div></div></div>');
+    out.w('<div class="ui vertical segment"><div class="ui middle aligned stackable grid container"><div class="row"><div class="eight wide column"> <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor\nquam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit\namet quam egestas semper.\n<em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper\npharetra. Vestibulum erat wisi, condimentum sed,\n<code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,\neros ipsum rutrum orci, sagittis tempus lacus enim ac dui.\n<a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in\nmi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur\nmassa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus,\nat luctus turpis elit sit amet quam. Vivamus pretium ornare\nest.</p></blockquote><h3>Header Level 3</h3><ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ul></div></div></div></div></div>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {
