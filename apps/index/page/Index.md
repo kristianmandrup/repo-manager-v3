@@ -25,4 +25,10 @@ Still ways to go, but slowly getting there. We really need a much better compone
 
 Also ways to go with regards to using Stylus for styling, and not our good old tired friend CSS :P
 
+Ideally we would like the Homepage and Page layout in general to look like [this](http://developerkarl.appspot.com/)
+
+A working local copy of this layout can be found in `/examples/developerkarl.appspot.com`. Let's use it as a reference for any Home, Launch or Promotion page :)
+
+Pure Awesome *BLISS!!!*
+
 *Keep on going!! :)*

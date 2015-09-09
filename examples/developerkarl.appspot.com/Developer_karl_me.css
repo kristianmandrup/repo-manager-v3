@@ -1,0 +1,328 @@
+/** Add css rules here for your application. */
+@font-face {
+	font-family: "Varela";
+	src: url(includes/fonts/VarelaRound-Regular.otf);
+}
+
+*:not(i) {
+	font-family: "Varela", Tahoma, Sans-serif !important;
+}
+
+.zone.wrapper.banner>div {
+	margin: 0em;
+	padding: 22rem 0em;
+}
+
+@media only screen and (max-width : 600px) {
+	.zone.wrapper.banner>div {
+		padding: 6rem 0em;
+	}
+}
+
+/* @media ( min-width : 992px) and (max-width: 1200px) {
+	.zone.wrapper.banner>div {
+		min-height: 526px;
+	}
+}
+
+@media ( max-width : 992px) {
+	.zone.wrapper.banner>div {
+		min-height: 476px;
+	}
+} */
+@media ( max-width : 768px ) {
+	.page.title {
+		padding: 50px 0 !important;
+	}
+}
+
+@media ( min-width : 768px ) {
+	.page.title {
+		padding: 80px 0 !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.zone.header {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.ui.fixed.inverted.main.menu {
+		display: none;
+	}
+}
+
+.header.filter {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.zone.wrapper {
+	padding: 2rem 0;
+}
+
+.zone.content {
+	padding: 5em 0;
+}
+
+body {
+	height: auto !important;
+}
+
+body .zone.footer>.zone.content {
+	padding: 0 !important;
+}
+
+.zone.wrapper+.ui.grid {
+	margin-top: 1em !important;
+}
+
+.zone.title {
+	background-size: cover !important;
+	background-position: center !important;
+	padding: 0;
+	background-attachment: fixed !important;
+}
+
+.zone.header.filter {
+	padding: 0 !important;
+	height: initial !important;
+}
+
+.zone.header {
+	padding: 1em 0 !important;
+	-webkit-transition: padding 0.5s ease, background 0.5s ease, box-shadow
+		0.5s ease, border 0.5s ease, width .2s ease, height .2s ease, top .2s
+		ease, bottom .2s ease !important;
+	transition: padding 0.5s ease, background 0.5s ease, box-shadow 0.5s
+		ease, border 0.5s ease, width .2s ease, height .2s ease, top .2s ease,
+		bottom .2s ease !important;
+	margin-top: 0 !important;
+}
+
+#me .zone.title {
+	background-image:
+		url(includes/images/studying_in_night-wallpaper-1920x1080.jpg);
+}
+
+#profiLe .zone.title {
+	background-image: url(includes/images/gate-wallpaper-1920x1080.jpg);
+}
+
+#skiLLs .zone.title {
+	background-image: url(includes/images/cute_cg_cat-1920x1080.jpg);
+}
+
+#work-and-education .zone.title {
+	background-image:
+		url(includes/images/bookshelves-wallpaper-1920x1080.jpg);
+}
+
+#portfoLio .zone.title {
+	background-image:
+		url(includes/images/vintage_posters-wallpaper-1600x1200.jpg);
+}
+
+#contact-me .zone.title {
+	background-image: url(includes/images/contact-1920x1080.jpg);
+}
+
+#quote {
+	background-color: #3498db;
+}
+
+#quote .zone.content {
+	padding: 3em 0 !important;
+}
+
+#tickLes {
+	background: #2980b9;
+}
+
+.page.title:after {
+	content: "";
+	display: block;
+	padding-top: 8px;
+	width: 80px;
+	margin: auto;
+	border-bottom: 1px solid #ffffff;
+}
+
+.filter {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.zone.wrapper.banner {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 0em;
+	color: rgba(255, 255, 255, 0.9);
+	margin-bottom: 0px;
+	border-bottom: none;
+	background-color: #2980B9;
+	background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.3));
+	background-position: 50% 50%;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-ms-transition: background-color 3s ease-in-out 1s;
+	-moz-transition: background-color 3s ease-in-out 1s;
+	-webkit-transition: background-color 3s ease-in-out 1s;
+	transition: background-color 3s ease-in-out 1s;
+}
+
+.logo.wrapper {
+	width: 35px;
+	float: left;
+	margin: 1rem;
+}
+
+.logo.wrapper+.ui.menu {
+	float: right;
+	menu: 0;
+}
+
+.g_hi {
+	font-size: 8vw;
+	line-height: 1em;
+	display: block;
+	font-weight: 700;
+}
+
+.g_my {
+	font-size: 5vw;
+	line-height: .85em;
+	display: block;
+}
+
+.g_ka {
+	font-size: 5.5vw;
+	line-height: .78em;
+	display: block;
+	font-weight: 700;
+	color: #3498db;
+	margin-top: 0.2em;
+}
+
+.g_or {
+	font-size: 1em;
+	line-height: 1.7em;
+	display: block;
+	text-align: right;
+}
+
+.g_li {
+	font-size: 4.5vw;
+	display: inline-block;
+	font-weight: 700;
+	color: #3498db;
+	line-height: 1.1em;
+}
+
+.g_an {
+	font-size: 3vw;
+	display: inline-block;
+	margin-left: .3141em;
+	margin-right: -10px;
+}
+
+.g_23 {
+	font-size: 6.8vw;
+	display: block;
+	float: left;
+	font-weight: 700;
+	color: #3498db;
+	line-height: 1em;
+}
+
+.g_ye {
+	font-size: 3vw;
+	display: block;
+	line-height: 1.5em;
+	text-align: right;
+}
+
+.g_we {
+	font-size: 3vw;
+	display: block;
+	line-height: 1.12em;
+	font-weight: 700;
+	color: #3498db;
+	text-align: right;
+	margin-bottom: 7px;
+}
+
+.g_ni {
+	display: block;
+	font-size: 4.1vw;
+	line-height: 1em;
+	white-space: nowrap;
+}
+
+.sub.header+.sub.header {
+	font-size: 0.85476rem !important;
+	color: rgba(0, 0, 0, .3);
+}
+
+.ui.jquery-blue.label, .ui.jquery-blue.labels .label {
+  background-color: #0769AD!important;
+  border-color: #0769AD!important;
+  color: #fff!important;
+}
+
+.ui.drupal-blue.label, .ui.drupal-blue.labels .label {
+  background-color: #2BA9E0!important;
+  border-color: #2BA9E0!important;
+  color: #fff!important;
+}
+
+.ui.js-yellow.label, .ui.js-yellow.labels .label {
+  background-color: #FDD93D!important;
+  border-color: #FDD93D!important;
+  color: #fff!important;
+}
+
+.ui.bootstrap-purple.label, .ui.bootstrap-purple.labels .label {
+  background-color: #563E7D!important;
+  border-color: #563E7D!important;
+  color: #fff!important;
+}
+
+.ui.semantic-green.label, .ui.semantic-green.labels .label {
+  background-color: #35BDB2!important;
+  border-color: #35BDB2!important;
+  color: #fff!important;
+}
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
