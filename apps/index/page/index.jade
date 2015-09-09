@@ -1,9 +1,9 @@
 extends ../layouts/index-layout.jade
 block content
+  follow-menu(ui='large.top.fixed.hidden' menu='data.top.menu')
   ui-sidebar(ui='left vertical inverted labeled icon')
     sidebar-menus(menus='data.sidebar.menus')
   top-menu(ui='main fixed inverted borderless pointing' menu='data.top.menu')
-  menu-button(ui='black big' transition="overlay")
   .pusher
     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum, est nec maximus porta, elit dui auctor nisl, id maximus felis sapien et elit. Aliquam erat volutpat. Phasellus vitae pellentesque massa. Nulla quis semper nulla, vel pulvinar nibh. Morbi sem eros, porttitor tempus vulputate et, egestas in erat. Donec faucibus lorem libero, vel luctus orci rhoncus eget. Praesent eu tortor eget elit mattis mattis. Nullam gravida, lorem in pretium suscipit, metus sapien posuere elit, quis tempus elit tellus et enim. Ut ac enim iaculis, hendrerit ante at, fermentum magna.
     | Nullam a eleifend orci. Praesent fringilla lectus sed venenatis pharetra. Quisque finibus, nunc ornare scelerisque dignissim, magna sem mattis magna, eget pretium enim nulla imperdiet est. Nullam scelerisque massa id magna vulputate, id dignissim nulla consequat. Mauris a mauris at ligula consectetur placerat. Proin nisi ligula, accumsan id diam a, aliquam viverra ante. Suspendisse id mauris sit amet mauris suscipit bibendum. Proin consectetur feugiat libero, ut lobortis felis pretium in. Fusce vulputate ipsum in facilisis blandit.

@@ -1,0 +1,9 @@
+div(class='ui $data.ui menu')
+  .ui.container
+    for(each='item in data.main')
+      link-item(item)
+
+    .right.menu
+      for(each='item in data.session')
+        .item
+          a(class='ui button' href='$item.link}') $item.label
