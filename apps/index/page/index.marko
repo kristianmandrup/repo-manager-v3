@@ -9,11 +9,17 @@
     <lasso-head></lasso-head>
   </head>
   <body>
-    <top-menu ui="main fixed inverted borderless" menu="data.top.menu"></top-menu>
+    <follow-menu ui="large top fixed hidden" menu="data.top.menu"></follow-menu>
     <ui-sidebar ui="left vertical inverted labeled icon">
       <sidebar-menus menus="data.sidebar.menus"></sidebar-menus>
     </ui-sidebar>
-    <menu-button ui="black big" transition="overlay"></menu-button>
+    <div class="pusher">
+      <div class="ui sticky inverted vertical center aligned segment">
+        <div class="ui container">
+          <top-menu ui="main fixed inverted borderless pointing" menu="data.top.menu"></top-menu>
+        </div>
+      </div>
+    </div>
     <lasso-body></lasso-body>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

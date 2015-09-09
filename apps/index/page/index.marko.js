@@ -6,11 +6,11 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/top-menu/renderer")),
+      ____________semantic_tags_semantic_components_menu_follow_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/follow-menu/renderer")),
       __tag = __helpers.t,
       ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/ui-sidebar/renderer")),
       ____________semantic_tags_semantic_components_sidebar_sidebar_menus_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/sidebar-menus/renderer")),
-      ____________semantic_tags_semantic_components_menu_menu_button_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/menu-button/renderer")),
+      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/top-menu/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -22,9 +22,9 @@ function create(__helpers) {
       escapeXml(data.title) +
       '</title><lasso-head></lasso-head></head><body>');
     __tag(out,
-      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
+      ____________semantic_tags_semantic_components_menu_follow_menu_renderer_js,
       {
-        "ui": "main fixed inverted borderless",
+        "ui": "large top fixed hidden",
         "menu": data.top.menu
       });
     __tag(out,
@@ -39,14 +39,16 @@ function create(__helpers) {
             "menus": data.sidebar.menus
           });
       });
+
+    out.w('<div class="pusher"><div class="ui sticky inverted vertical center aligned segment"><div class="ui container">');
     __tag(out,
-      ____________semantic_tags_semantic_components_menu_menu_button_renderer_js,
+      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
       {
-        "ui": "black big",
-        "transition": "overlay"
+        "ui": "main fixed inverted borderless pointing",
+        "menu": data.top.menu
       });
 
-    out.w('<lasso-body></lasso-body>');
+    out.w('</div></div></div><lasso-body></lasso-body>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {
