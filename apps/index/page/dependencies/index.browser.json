@@ -1,7 +1,4 @@
 {
   "dependencies": [
-    "./style.less",
-    "require-run: ./main",
-    "require: /Users/kristianmandrup/repos/test123/repo-manager-v3/apps/_global/components/app-hello/widget.js"
   ]
 }
