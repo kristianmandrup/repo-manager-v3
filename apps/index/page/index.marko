@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities-->
+    <title>Manticore CMS</title>
+    <script src="js/sortablejs/Sortable.min.js"></script>
     <link rel="stylesheet" type="text/css" href="semantic.min.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script>
-    <script src="semantic.min.js">   </script>
+    <script src="semantic.min.js">  </script>
+    <link rel="stylesheet" type="text/css" href="home/page.css">
+    <script src="home/page.js"></script>
     <title>$data.title</title>
-    <lasso-head></lasso-head>
   </head>
   <body>
-    <h1>$data.header  </h1>
-    <h2>$out.global.appName</h2>
-    <icon-list list="data.lists.users"></icon-list>
-    <icon-list list="out.global.lists.repos"></icon-list>
-    <ui-accordion>
-      <acc-block active="true" label="Yeah" text="hello world"></acc-block>
-    </ui-accordion>
-    <lasso-body></lasso-body>
+    <follow-menu ui="" menu="data.top.menu"></follow-menu>
+    <ui-sidebar ui="left vertical inverted labeled icon">
+      <sidebar-menus menus="data.sidebar.menus"></sidebar-menus>
+    </ui-sidebar>
+    <div class="pusher">
+      <div class="ui sticky inverted vertical center aligned segment">
+        <div class="ui container">
+          <top-menu ui="" menu="data.top.menu"></top-menu>
+        </div>
+      </div>
+    </div>
     <browser-refresh enabled="true"></browser-refresh>
   </body>
 </html>

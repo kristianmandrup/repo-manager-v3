@@ -1,7 +1,0 @@
-{
-    "@ui": "string",
-    "@label": "string",
-    "@name": "string",
-    "@checked": "boolean",
-    "@tab": "number"
-}

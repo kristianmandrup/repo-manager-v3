@@ -4,44 +4,45 @@ function create(__helpers) {
       notEmpty = __helpers.ne,
       escapeXml = __helpers.x,
       __renderer = __helpers.r,
-      _______global_components_list_icon_list_renderer_js = __renderer(require("../../_global/components/list/icon-list/renderer")),
+      ____________semantic_tags_semantic_components_menu_follow_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/follow-menu/renderer")),
       __tag = __helpers.t,
-      _______global_components_accordion_ui_accordion_renderer_js = __renderer(require("../../_global/components/accordion/ui-accordion/renderer")),
-      _______global_components_accordion_acc_block_renderer_js = __renderer(require("../../_global/components/accordion/acc-block/renderer")),
+      ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/ui-sidebar/renderer")),
+      ____________semantic_tags_semantic_components_sidebar_sidebar_menus_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/sidebar-menus/renderer")),
+      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/top-menu/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
-    out.w('<!DOCTYPE html> <html><head><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script><script src="semantic.min.js">   </script><title>' +
+    out.w('<!DOCTYPE html> <html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Manticore CMS</title><script src="js/sortablejs/Sortable.min.js"></script><link rel="stylesheet" type="text/css" href="semantic.min.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js">   </script><script src="semantic.min.js">  </script><link rel="stylesheet" type="text/css" href="home/page.css"><script src="home/page.js"></script><title>' +
       escapeXml(data.title) +
-      '</title><lasso-head></lasso-head></head><body><h1>' +
-      escapeXml(data.header) +
-      ' </h1><h2>' +
-      escapeXml(out.global.appName) +
-      '</h2>');
+      '</title></head><body>');
     __tag(out,
-      _______global_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_menu_follow_menu_renderer_js,
       {
-        "list": data.lists.users
+        "ui": "",
+        "menu": data.top.menu
       });
     __tag(out,
-      _______global_components_list_icon_list_renderer_js,
+      ____________semantic_tags_semantic_components_sidebar_ui_sidebar_renderer_js,
       {
-        "list": out.global.lists.repos
-      });
-    __tag(out,
-      _______global_components_accordion_ui_accordion_renderer_js,
-      {},
+        "ui": "left vertical inverted labeled icon"
+      },
       function(out) {
         __tag(out,
-          _______global_components_accordion_acc_block_renderer_js,
+          ____________semantic_tags_semantic_components_sidebar_sidebar_menus_renderer_js,
           {
-            "active": "true",
-            "label": "Yeah",
-            "text": "hello world"
+            "menus": data.sidebar.menus
           });
       });
 
-    out.w('<lasso-body></lasso-body>');
+    out.w('<div class="pusher"><div class="ui sticky inverted vertical center aligned segment"><div class="ui container">');
+    __tag(out,
+      ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
+      {
+        "ui": "",
+        "menu": data.top.menu
+      });
+
+    out.w('</div></div></div>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {

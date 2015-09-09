@@ -1,8 +1,9 @@
-extends layout.jade
+extends ../layouts/index-layout.jade
 block content
-  h1 $data.header  
-  h2 $out.global.appName
-  icon-list(list="data.lists.users")
-  icon-list(list="out.global.lists.repos")
-  ui-accordion
-    acc-block(active='true' label='Yeah' text="hello world")
+  follow-menu(ui='' menu='data.top.menu')
+  ui-sidebar(ui='left vertical inverted labeled icon')
+    sidebar-menus(menus='data.sidebar.menus')
+  .pusher
+    .ui.sticky.inverted.vertical.center.aligned.segment
+      .ui.container
+        top-menu(ui='' menu='data.top.menu')
