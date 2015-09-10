@@ -1,8 +1,7 @@
 extends ../layouts/index-layout.jade
 block content
   follow-menu(ui='' menu='data.top.menu')
-  ui-sidebar(ui='left inverted labeled icon')
-    sidebar-menus(menus='data.sidebar.menus')
+  sidebar-menu(ui='left inverted labeled icon' menus='data.sidebar.menus')
   .pusher
     menu-container(ui='top-menu sticky center aligned')
       top-menu(menu='data.top.menu')
