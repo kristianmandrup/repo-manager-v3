@@ -1,40 +1,34 @@
 extends ../layouts/index-layout.jade
 block content
-  follow-menu(ui='' menu='data.top.menu')
-  // try: labeled icon
-  sidebar-menu(ui='left inverted labeled' menus='data.sidebar.menus')
-  .pusher
-    menu-container(ui='top-menu sticky center aligned')
-      top-menu(menu='data.top.menu')
-    .ui.vertical.segment
-      .ui.middle.aligned.stackable.grid.container
-        .row
-          .eight.wide.column            
-            ui-list(list='data.lists')
-              .item
-                ui-header(label='Top story')
-                form.ui.form
-                  .ui.list
-                    .item
-                      .right.floated.content
-                        .ui.button
-                          i.remove.icon
-                          |                         Remove
-                      img.ui.avatar.image(src='http://lorempixel.com/200/200/sports/')
-                      .content
-                        a.header 
-                          .ui.mini.input
-                            input(value='Victory')
-                        .description Dark horse wins the race                  
-                    .item
-                      .right.floated.content
-                        .ui.button
-                          i.remove.icon
-                          |                         Remove
-                      img.ui.avatar.image(src='http://lorempixel.com/200/200/sports/')
-                      .content
-                        a.header 
-                          .ui.mini.input
-                            input(value='Victory')
-                        .description Dark horse wins the race                  
-                
+  .ui.vertical.segment
+    .ui.middle.aligned.stackable.grid.container
+      .row
+        .eight.wide.column            
+          ui-list(list='data.lists')
+            .item
+              ui-header(label='Top story')
+              form.ui.form
+                .ui.list
+                  .item
+                    .right.floated.content
+                      .ui.button
+                        i.remove.icon
+                        |                         Remove
+                    img.ui.avatar.image(src='http://lorempixel.com/200/200/sports/')
+                    .content
+                      a.header 
+                        .ui.mini.input
+                          input(value='Victory')
+                      .description Dark horse wins the race                  
+                  .item
+                    .right.floated.content
+                      .ui.button
+                        i.remove.icon
+                        |                         Remove
+                    img.ui.avatar.image(src='http://lorempixel.com/200/200/sports/')
+                    .content
+                      a.header 
+                        .ui.mini.input
+                          input(value='Victory')
+                      .description Dark horse wins the race                  
+              

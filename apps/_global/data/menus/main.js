@@ -1,17 +1,22 @@
-module.exports = [
-  {
-    label: 'Projects',
-    link: '/projects',
+module.exports = [{
+    label: 'Home',
+    link: '/',
     active: true
   },
   {
+    label: 'Projects',
+    link: '/projects'
+  },
+  {
+    label: 'Services',
+    link: '/services'
+  },,
+  {
     label: 'Repos',
-    link: '/repos',
-    active: false
+    link: '/repos'
   },
   {
     label: 'Teams',
-    link: '/teams',
-    active: false
+    link: '/teams'
   }
-]
+];

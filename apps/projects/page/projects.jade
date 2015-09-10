@@ -1,0 +1,15 @@
+extends ../layouts/index-layout.jade
+block content
+  .ui.vertical.segment
+    .ui.middle.aligned.stackable.grid.container
+      .row
+        .eight.wide.column            
+          ui-list(list='data.lists')
+            .item
+              ui-header(label='Projects')
+              form.ui.form
+                .ui.list
+                  for(each='item in out.global.lists.projects')
+                    project-item(name='item.name' title='item.title')
+              
+              

@@ -18,7 +18,16 @@ html
       title $data.title
     //- lasso-head
   body
-    block content
-      h1 $data.header
+    block menus
+      follow-menu(ui='' menu='out.global.menus.top')
+      // try: labeled icon
+      sidebar-menu(ui='left inverted labeled' menus='out.global.menus.sidebar')
+      .pusher
+        menu-container(ui='top-menu sticky center aligned')
+          top-menu(menu='out.global.menus.top')
+            
+        block content
+          h1 $data.header
+
     //- lasso-body
     browser-refresh(enabled="true")

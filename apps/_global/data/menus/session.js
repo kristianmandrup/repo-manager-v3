@@ -1,8 +1,9 @@
-module.exports = {
-  login: {
-    label: 'Login'
+module.exports = [{
+    label: 'Sign in',
+    link: '/signin'
   },
-  registration: {
-    label: 'Sign up'
-  }  
-}
+  {
+    label: 'Log in',
+    link: '/login'
+  }
+]
