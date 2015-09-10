@@ -1,2 +1,2 @@
-Repos page
+Teams page
 ==========

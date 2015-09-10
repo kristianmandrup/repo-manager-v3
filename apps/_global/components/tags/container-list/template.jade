@@ -1,0 +1,7 @@
+ui-list
+  .item
+    ui-header(label='$data.label')
+    form.ui.form
+      .ui.list
+        for(each='item in data.list')
+          list-item(name='$item.name' title='$item.title')

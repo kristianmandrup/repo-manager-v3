@@ -4,12 +4,5 @@ block content
     .ui.middle.aligned.stackable.grid.container
       .row
         .eight.wide.column            
-          ui-list(list='data.lists')
-            .item
-              ui-header(label='Repos')
-              form.ui.form
-                .ui.list
-                  for(each='item in out.global.lists.projects')
-                    repo-item(name='item.name' title='item.title')
-              
+          container-list(list='out.global.lists.repos' label='Repos')
               
