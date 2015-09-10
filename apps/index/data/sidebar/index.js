@@ -1,5 +1,17 @@
 module.exports = {
-  menus: [{
+  menus: [
+  {
+    type: 'logo', // should be able to auto-detect
+    logo: 'my-logo.png'
+    label: 'Manticore.io'
+  },
+  {
+    type: 'link', // should be able to auto-detect
+    link: '/getting-started.html',
+    label: 'Getting started',
+  }
+  {
+    type: 'sub-menu', // should be able to auto-detect        
     header: 'Projects',
     menu: [
       {
