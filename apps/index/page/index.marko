@@ -26,20 +26,37 @@
         <div class="ui middle aligned stackable grid container">
           <div class="row">
             <div class="eight wide column">           
-              <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-              <h2>Header Level 2</h2>
-              <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-              </ol>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-              </blockquote>
-              <h3>Header Level 3</h3>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-              </ul>
+              <ui-list list="data.lists">
+                <div class="item">
+                  <ui-header label="Top story"></ui-header>
+                  <form class="ui form">
+                    <div class="ui list">
+                      <div class="item">
+                        <div class="right floated content">
+                          <div class="ui button"><i class="remove icon"></i>                        Remove</div>
+                        </div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image">
+                        <div class="content"><a class="header"> 
+                            <div class="ui mini input">
+                              <input value="Victory">
+                            </div></a>
+                          <div class="description">Dark horse wins the race                  </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="right floated content">
+                          <div class="ui button"><i class="remove icon"></i>                        Remove</div>
+                        </div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image">
+                        <div class="content"><a class="header"> 
+                            <div class="ui mini input">
+                              <input value="Victory">
+                            </div></a>
+                          <div class="description">Dark horse wins the race                  </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </ui-list>
             </div>
           </div>
         </div>
