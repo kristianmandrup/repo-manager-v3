@@ -1,0 +1,10 @@
+.two.fields
+  .twelve.wide.field
+    select.ui.dropdown.meta-data(name='tags', multiple='')
+      for(each='item in data.selectOpts')
+        option(value='$item.value' selected='' if='item.isSelected') $item.label
+        option(value='$item.value' else='') $item.label
+  .four.wide.field
+    button.ui.button
+      i.icon.add
+      | $data.addLabel

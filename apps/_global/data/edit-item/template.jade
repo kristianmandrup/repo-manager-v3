@@ -1,0 +1,45 @@
+form.ui.form
+  .field
+    .ui.floating.dropdown.labeled.search.icon.button
+      i.world.icon
+      span.text Select Language
+      .menu
+        .item Arabic
+        .item Chinese
+        .item Danish
+        .item Dutch
+  .field
+    input(type='text', name='name', placeholder='Name' value='$data.name')
+  .field
+    input(type='text', name='title', placeholder='Title' value='$data.title')
+
+  multi-selector(list='data.categories' referenceList='out.global.categories' addLabel='Category')
+  multi-selector(list='data.tags' referenceList='out.global.tags' addLabel='Tag')
+
+  .field
+    select.ui.dropdown(name='templates', multiple='')
+      option(value='') Templates
+      option(value='top-banner') Top banner
+      option(value='side-banner') Side banner
+  .field
+    textarea(name='summary', rows='2', placeholder='Summary')
+  .field
+    textarea(name='content', placeholder='Content')
+  .field.blue
+    textarea(name='description', placeholder='Description')
+  .ui.striped.segment
+    .ui.buttons
+      button.ui.button Cancel
+      .or
+      button.ui.positive.button Save
+    .ui.right.floated.buttons
+      .ui.floating.dropdown.labeled.search.icon.right.floated.button
+        i.list.icon
+        span.text Add to
+        .menu
+          .item Top banners
+          .item Logos
+          .item Ads
+          .item Users
+      button.ui.button Publish
+      button.ui.secondary.button Preview
