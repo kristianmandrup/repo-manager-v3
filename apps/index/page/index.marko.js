@@ -9,8 +9,7 @@ function create(__helpers) {
       ____________semantic_tags_semantic_components_sidebar_sidebar_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/sidebar/sidebar-menu/renderer")),
       ____________semantic_tags_semantic_components_menu_menu_container_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/menu-container/renderer")),
       ____________semantic_tags_semantic_components_menu_top_menu_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/menu/top-menu/renderer")),
-      ____________semantic_tags_semantic_components_list_ui_list_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/list/ui-list/renderer")),
-      ____________semantic_tags_semantic_components_header_ui_header_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/header/ui-header/renderer")),
+      ____________semantic_tags_semantic_components_hero_ui_hero_renderer_js = __renderer(require("../../../../semantic-tags/semantic/components/hero/ui-hero/renderer")),
       _________node_modules_browser_refresh_taglib_refresh_tag_js = __renderer(require("browser-refresh-taglib/refresh-tag"));
 
   return function render(data, out) {
@@ -21,13 +20,13 @@ function create(__helpers) {
       ____________semantic_tags_semantic_components_menu_follow_menu_renderer_js,
       {
         "ui": "",
-        "menu": data.top.menu
+        "menus": out.global.menus
       });
     __tag(out,
       ____________semantic_tags_semantic_components_sidebar_sidebar_menu_renderer_js,
       {
         "ui": "left inverted labeled",
-        "menus": data.sidebar.menus
+        "menus": out.global.menus.sidebar
       });
 
     out.w('<div class="pusher">');
@@ -40,28 +39,17 @@ function create(__helpers) {
         __tag(out,
           ____________semantic_tags_semantic_components_menu_top_menu_renderer_js,
           {
-            "menu": data.top.menu
+            "menus": out.global.menus
           });
       });
-
-    out.w('<div class="ui vertical segment"><div class="ui middle aligned stackable grid container"><div class="row"><div class="eight wide column"> ');
     __tag(out,
-      ____________semantic_tags_semantic_components_list_ui_list_renderer_js,
+      ____________semantic_tags_semantic_components_hero_ui_hero_renderer_js,
       {
-        "list": data.lists
-      },
-      function(out) {
-        out.w('<div class="item">');
-        __tag(out,
-          ____________semantic_tags_semantic_components_header_ui_header_renderer_js,
-          {
-            "label": "Top story"
-          });
-
-        out.w('<form class="ui form"><div class="ui list"><div class="item"><div class="right floated content"><div class="ui button"><i class="remove icon"></i> Remove</div></div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image"><div class="content"><a class="header"> <div class="ui mini input"><input value="Victory"></div></a><div class="description">Dark horse wins the race </div></div></div><div class="item"><div class="right floated content"><div class="ui button"><i class="remove icon"></i> Remove</div></div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image"><div class="content"><a class="header"> <div class="ui mini input"><input value="Victory"></div></a><div class="description">Dark horse wins the race </div></div></div></div></form></div>');
+        "title": "Manticore.io",
+        "caption": "Your one stop SAAS shop"
       });
 
-    out.w('</div></div></div></div></div>');
+    out.w('</div>');
     __tag(out,
       _________node_modules_browser_refresh_taglib_refresh_tag_js,
       {

@@ -1,4 +1,4 @@
-extends ../layouts/index-layout.jade
+extends ../layouts/projects-layout.jade
 block content
   .ui.vertical.segment
     .ui.middle.aligned.stackable.grid.container
@@ -10,6 +10,6 @@ block content
               form.ui.form
                 .ui.list
                   for(each='item in out.global.lists.projects')
-                    project-item(name='item.name' title='item.title')
+                    project-item(name='$item.name' title='$item.title')
               
               

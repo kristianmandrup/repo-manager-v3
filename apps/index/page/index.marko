@@ -15,52 +15,14 @@
     <title>$data.title</title>
   </head>
   <body>
-    <follow-menu ui="" menu="data.top.menu"></follow-menu>
+    <follow-menu ui="" menus="out.global.menus"></follow-menu>
     <!-- try: labeled icon-->
-    <sidebar-menu ui="left inverted labeled" menus="data.sidebar.menus"></sidebar-menu>
+    <sidebar-menu ui="left inverted labeled" menus="out.global.menus.sidebar"></sidebar-menu>
     <div class="pusher">
       <menu-container ui="top-menu sticky center aligned">
-        <top-menu menu="data.top.menu"></top-menu>
+        <top-menu menus="out.global.menus"></top-menu>
       </menu-container>
-      <div class="ui vertical segment">
-        <div class="ui middle aligned stackable grid container">
-          <div class="row">
-            <div class="eight wide column">           
-              <ui-list list="data.lists">
-                <div class="item">
-                  <ui-header label="Top story"></ui-header>
-                  <form class="ui form">
-                    <div class="ui list">
-                      <div class="item">
-                        <div class="right floated content">
-                          <div class="ui button"><i class="remove icon"></i>                        Remove</div>
-                        </div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image">
-                        <div class="content"><a class="header"> 
-                            <div class="ui mini input">
-                              <input value="Victory">
-                            </div></a>
-                          <div class="description">Dark horse wins the race                  </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="right floated content">
-                          <div class="ui button"><i class="remove icon"></i>                        Remove</div>
-                        </div><img src="http://lorempixel.com/200/200/sports/" class="ui avatar image">
-                        <div class="content"><a class="header"> 
-                            <div class="ui mini input">
-                              <input value="Victory">
-                            </div></a>
-                          <div class="description">Dark horse wins the race                  </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </ui-list>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ui-hero title="Manticore.io" caption="Your one stop SAAS shop"></ui-hero>
     </div>
     <browser-refresh enabled="true"></browser-refresh>
   </body>

@@ -19,12 +19,12 @@ html
     //- lasso-head
   body
     block menus
-      follow-menu(ui='' menu='out.global.menus.top')
+      follow-menu(ui='' menus='out.global.menus')
       // try: labeled icon
       sidebar-menu(ui='left inverted labeled' menus='out.global.menus.sidebar')
       .pusher
         menu-container(ui='top-menu sticky center aligned')
-          top-menu(menu='out.global.menus.top')
+          top-menu(menus='out.global.menus')
             
         block content
           h1 $data.header
