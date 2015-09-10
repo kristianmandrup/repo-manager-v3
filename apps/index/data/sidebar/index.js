@@ -2,21 +2,28 @@ module.exports = {
   menus: [
   {
     type: 'logo', // should be able to auto-detect
-    logo: 'my-logo.png'
+    logo: 'my-logo.png',
     label: 'Manticore.io'
   },
   {
     type: 'link', // should be able to auto-detect
     link: '/getting-started.html',
     label: 'Getting started',
-  }
+  },
   {
-    type: 'sub-menu', // should be able to auto-detect        
+    type: 'icon-link', // should be able to auto-detect
+    link: '/your-team.html',
+    label: 'Your team',
+    icon: 'users'
+  },
+  {
+    type: 'sub-menu', // should be able to auto-detect
     header: 'Projects',
     menu: [
       {
         label: 'Project A',
-        link: '/projects/a'
+        link: '/projects/a',
+        icon: 'star' //favorite
       },
       {
         label: 'Project B',

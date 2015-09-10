@@ -24,7 +24,7 @@ function create(__helpers) {
     __tag(out,
       ____________semantic_tags_semantic_components_sidebar_sidebar_menu_renderer_js,
       {
-        "ui": "left inverted labeled icon",
+        "ui": "left inverted labeled",
         "menus": data.sidebar.menus
       });
 
