@@ -4,10 +4,11 @@ ui-form
   text-input(fieldWrap='true' name='title' placeholder='Title' value='$data.title')
   multi-selector(list='data.item.categories' refList='out.global.categories' addLabel='Category' if='data.item.categories')
   multi-selector(list='data.item.tags' refList='out.global.tags' addLabel='Tag' if='data.item.tags')
-  ui-selector(fieldWrap='true' name='templates' multiple='true' list='data.item.templates' refList='out.global.templates')
+  //- ui-selector(fieldWrap='true' name='templates' multiple='true' list='data.item.templates' refList='out.global.templates')
   text-area(fieldWrap='true' name='summary' rows='2' placeholder='Summary')
   text-area(fieldWrap='true' name='content' rows='2' placeholder='Content')
   text-area(fieldWrap='true' ui='meta-data' name='description' rows='2' placeholder='Description')
+
   ui-segment(ui='striped')
     ui-buttons
       ui-button(label='Cancel')

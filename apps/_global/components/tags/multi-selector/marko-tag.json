@@ -1,5 +1,6 @@
 {
     "@list": "array",
     "@refList": "array",
-    "@addLabel": "string"
+    "@addLabel": "string",
+    "@name": "string"
 }

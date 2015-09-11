@@ -5,6 +5,9 @@ module.exports = [
     image: 'kitty.png',
     summary: 'A cuddly project to pet',
     description: 'Another pet project down the hatch!',
+    categories: [
+      'sports'
+    ],
     tags: [
       'pet',
       'cuddle'
