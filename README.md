@@ -4,7 +4,7 @@ Simple Marko app skeleton
 Getting started
 ---------------
 
-Exectute these in order
+Execute these in order:
 
 Get a copy of the app/project
 
@@ -48,52 +48,67 @@ Alternatively, start server using `MARKO_CLEAN=true` to ensure all templates are
 
 `MARKO_CLEAN=true node .`
 
+### Development
+
+Use Atom IDE as your Editor.
+
+Install package JSHint in order to Hint JS errors as you type!
+
+To avoid Node "error", see: [Node Lint config](https://coderwall.com/p/-h1h1w/how-to-use-jslint-in-node-js-projects-properly)
+
+This will make you WAY more productive, as most of the time is otherwise spent chasing missing/bad punctuations such as missing or surplus `,` etc.
+
+#### Experimental auto-fix
+
+You can also try [FixMyJS](https://github.com/jshint/fixmyjs) which can be run as a gulp task `gulp fixjs` or from Atom IDE. (Can you make it work?)
+
 ### App file structure
+
+The file structure SHOULD look as follows.
+
+*TODO: Some files need renaming in this project!*
 
 ```
 /apps
   /_global
     /components - custom taglibs and tags
-      /button
-        /link-button
-        ...
-        marko-taglib.json
       /feed
         /project-feed
           marko-tag.json
           renderer.js
           template.jade
           template.marko
-      /item
-        /link-item
-        ...
-        marko-taglib.json
-      /list
-        /icon-list
-        ...
-        marko-taglib.json
-      /menu
-        /main-menu
-        /session-menu
-        ...
-        marko-taglib.json
       marko-taglib.json
 
-    /state - state available to all apps as $out.global
+    /data - state available to all apps as $out.global
       index.js
-      /menu
+      /available
         index.js
-        main-menu.js
-        session-menu.js
+        categories.js        
+        ...
+      /feeds
+        index.js
+        /activity
+          ...
+      /forms
+        index.js
+        project.js        
+        ...
+      /menus
+        index.js
+        main.js
+        session.js
         ...
       /lists
         index.js
         users.js
         repos.js
-        ...
+        ...      
 
     /layouts - generic layouts
       layout.jade
+      item-layout.jade
+      list-layout.jade
 
   /index - app
     /components
@@ -101,14 +116,14 @@ Alternatively, start server using `MARKO_CLEAN=true` to ensure all templates are
 
     /layouts - special page layouts
       mobile.jade
+      base.jade
 
     /page - page for app
-      index.jade
-      index.marko
-      index.browser.json - lasso config file
-      layout.jade - default layout for index app
+      app.jade
+      app.marko
+      app.browser.json - lasso config file
 
-    /state - state for index app, available as $data
+    /data - state for index app, available as $data
       index.js - local state for index app only
 
     marko-taglib.json
@@ -131,13 +146,14 @@ This geneator will create an app under `apps/[app-name]` similar to the default 
     /project-feed
       template.marko
   /layouts
-    _page.jade
-  /state
+    base.jade
+  /data
     index.js
   /page
-    index.jade
-    index.marko
-    index.browser.json
+    app.jade
+    app.marko
+    /dependencies
+      app.browser.json
   marko-taglib.json
 ```
 
@@ -179,7 +195,7 @@ If an app name is given: `apps/[app-name]/components`
 
 As you get more fine grained tags, it starts to make sense to group them into categories such as:
 
--	button Tags
+-	button tags
 -	list tags
 -	list item tags
 -	...
@@ -198,7 +214,8 @@ This will create a subfolder `xxx` for the tag. F.ex for the tag `menu:top`
           renderer.js
           template.marko
           template.jade
-
+      marko-taglib.json
+    marko-taglib.json
   marko-taglib.json
 ```
 

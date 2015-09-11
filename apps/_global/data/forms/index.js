@@ -4,4 +4,4 @@ module.exports = {
   repo: require('./repo'),
   team: require('./team'),
   user: require('./user')
-}
+};

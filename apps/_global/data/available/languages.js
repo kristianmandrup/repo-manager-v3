@@ -1,3 +1,5 @@
+/*jslint node: true */
+'use strict';
 module.exports = [
   {
     label: 'English',
@@ -11,4 +13,4 @@ module.exports = [
     label: 'French',
     value: 'french'
   }
-]
+];

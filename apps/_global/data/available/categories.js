@@ -1,3 +1,5 @@
+/*jslint node: true */
+'use strict';
 module.exports = [
   {
     label: 'Sports',
@@ -7,4 +9,4 @@ module.exports = [
     label: 'Shopping',
     value: 'shopping'
   }
-]
+];

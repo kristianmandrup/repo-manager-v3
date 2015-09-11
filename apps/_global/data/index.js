@@ -6,4 +6,4 @@ module.exports = {
   forms: require('./forms'),
   available: require('./available'),
   appName: 'Repo Manager v3'
-}
+};

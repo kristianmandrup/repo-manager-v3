@@ -7,4 +7,4 @@ module.exports = [
     label: 'Design',
     value: 'design'
   }
-]
+];
