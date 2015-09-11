@@ -3,6 +3,12 @@ module.exports = {
   // out.global.lists.projects
   page: {
     name: 'projects',
-    title: 'Projects'
+    title: 'Projects',
+    item: {
+      containers: [
+        'ships',
+        'cars'
+      ]
+    }
   }
 }

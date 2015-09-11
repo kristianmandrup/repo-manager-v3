@@ -1,7 +1,6 @@
-ui-form
-  for(each='(name, item) in data.form')
-    txt-input(if='item.textinput' fieldWrap='true' name='$name' placeholder='$item.placeholder' value='$item.value')
-    txt-area(else-if='item.textarea' fieldWrap='true' name='$name' rows='$item.rows' placeholder='$item.placeholder')
-    multi-selector(else-if='item.multiSelect' name='$name' list='item.list' refList='item.refList' addLabel='$item.addLabel')
+for(each='(name, item) in data.form')
+  txt-input(if='item.textinput' fieldWrap='true' name='$name' placeholder='$item.placeholder' value='$item.value')
+  txt-area(else-if='item.textarea' fieldWrap='true' name='$name' rows='$item.rows' placeholder='$item.placeholder')
+  multi-selector(else-if='item.multiSelect' name='$name' list='item.list' refList='item.refList' addLabel='$item.addLabel')
 
-    
+  
