@@ -1,6 +1,8 @@
 module.exports = {
   name: {
   },
+  title: {
+  },
   categories: {
     placeholder: 'Select categories',
     addLabel: 'Category',

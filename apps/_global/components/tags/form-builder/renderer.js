@@ -48,7 +48,10 @@ exports.renderer = function(input, out) {
       }
     } else {
       input.form[key].textinput = isTextInput(key, value);
-      input.form[key].textarea = isTextArea(key, value);
+      if (isTextArea(key, value)) {
+        input.form[key].textarea = true;
+        input.form[key].rows = formObj.rows || 2;
+      }
     }
   }
   console.log('form-builder ready', input.form);

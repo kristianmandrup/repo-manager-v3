@@ -1,13 +1,13 @@
 ui-form
   search-dropdown(fieldWrap='true' icon='world' label='Select Language' list='out.global.languages')
-  text-input(fieldWrap='true' name='name' placeholder='Name' value='$data.name')
-  text-input(fieldWrap='true' name='title' placeholder='Title' value='$data.title')
+  txt-input(fieldWrap='true' name='name' placeholder='Name' value='$data.name')
+  txt-input(fieldWrap='true' name='title' placeholder='Title' value='$data.title')
   multi-selector(list='data.item.categories' refList='out.global.categories' addLabel='Category' if='data.item.categories')
   multi-selector(list='data.item.tags' refList='out.global.tags' addLabel='Tag' if='data.item.tags')
   //- ui-selector(fieldWrap='true' name='templates' multiple='true' list='data.item.templates' refList='out.global.templates')
-  text-area(fieldWrap='true' name='summary' rows='2' placeholder='Summary')
-  text-area(fieldWrap='true' name='content' rows='2' placeholder='Content')
-  text-area(fieldWrap='true' ui='meta-data' name='description' rows='2' placeholder='Description')
+  txt-area(fieldWrap='true' name='summary' rows='2' placeholder='Summary')
+  txt-area(fieldWrap='true' name='content' rows='2' placeholder='Content')
+  txt-area(fieldWrap='true' ui='meta-data' name='description' rows='2' placeholder='Description')
 
   ui-segment(ui='striped')
     ui-buttons
