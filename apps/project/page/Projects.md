@@ -1,2 +1,2 @@
-Projects page
-=============
+Project page
+============

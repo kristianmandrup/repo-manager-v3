@@ -15,12 +15,19 @@ module.exports = [
     owner: 'kmandrup',
     relations: {
       projects: [
+        'legacy-system'
       ],
       repos: [
+        'elephant-jack'
       ],
       teams: [
+        'a-team'
       ],
       users: [
+        'kmandrup',
+        'badass',
+        'mother',
+        'jack'
       ]
     },
     milestones: [
@@ -28,7 +35,10 @@ module.exports = [
         name: 'prototype',
         title: 'First prototype',
         summary: 'The prototype must ...',
-        description: 'In order to ...'
+        description: 'In order to ...',
+        tags: [
+          'proto', 'web'
+        ]
       }
     ],
     issues: [
@@ -36,9 +46,11 @@ module.exports = [
         title: 'Database sucks',
         description: 'Fuckin sucks baby!',
         complexity: 12,
-        reposInvolved: [
-
-        ],
+        relations: {
+          repos: [
+            'karma/boy'
+          ]
+        },
         tags: [
           'fucks',
           'sucks'
@@ -48,6 +60,16 @@ module.exports = [
           'kmandrup',
           'jcabrera'
         ]
+      }
+    ],
+    comments: [
+      {
+        user: 'jack',
+        content: 'Jack is back!'
+      },
+      {
+        user: 'badass',
+        content: 'This project ROCKS :)'
       }
     ]
   }

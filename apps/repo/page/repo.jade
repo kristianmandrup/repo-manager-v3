@@ -1,0 +1,10 @@
+extends ../layouts/repo-layout.jade
+block item
+  ui-form
+    form-builder(obj='out.global.lists.projects[0]' form='out.global.forms.project')
+    ui-segment(ui='striped')
+      ui-buttons(list="['Cancel', 'Save']" positive='Save' or='or')
+      //- ui-buttons(ui='right floated')
+      //-   search-dropdown(icon='list' label='Add to' list='data.item.containers')
+      //-   ui-button(label='Publish')
+      //-   ui-button(ui='secondary' label='Preview')
