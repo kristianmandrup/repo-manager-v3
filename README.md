@@ -66,8 +66,6 @@ You can also try [FixMyJS](https://github.com/jshint/fixmyjs) which can be run a
 
 The file structure SHOULD look as follows.
 
-*TODO: Some files need renaming in this project!*
-
 ```
 /apps
   /_global
