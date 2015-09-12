@@ -1,6 +1,6 @@
 module.exports = [{
-    label: 'Sign in',
-    link: '/signin'
+    label: 'Sign up',
+    link: '/signup'
   },
   {
     label: 'Log in',

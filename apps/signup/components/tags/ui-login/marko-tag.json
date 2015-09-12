@@ -1,0 +1,7 @@
+{
+  "@header": "object",
+  "@email": "object",
+  "@password": "object",
+  "@button": "object",
+  "@signup": "object"
+}
