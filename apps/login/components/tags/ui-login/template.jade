@@ -1,0 +1,21 @@
+.ui.middle.aligned.center.aligned.grid
+  .column
+    div(class='h2 ui $data.header.ui image header')
+      img.image(src='$data.header.logo')
+      .content
+        | $data.header.label
+    form.ui.large.form
+      .ui.stacked.segment
+        .field
+          .ui.left.icon.input
+            i.user.icon
+            input(type='text', name='email', placeholder='$data.email.placeholder')
+        .field
+          .ui.left.icon.input
+            i.lock.icon
+            input(type='password', name='password', placeholder='$data.password.placeholder')
+        div(class='ui fluid $data.button.ui submit button') $data.button.label
+      .ui.error.message
+    .ui.message
+      | $data.signup.header
+      a(id='signup' href='#') $data.signup.label
