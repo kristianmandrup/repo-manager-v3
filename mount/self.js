@@ -8,10 +8,10 @@ let multi = ['projects', 'services', 'repos', 'teams', 'users'];
 let single = ['project', 'service', 'repo', 'team', 'user'];
 let others = ['login']
 
-let apps = ['index']
+// let apps = ['index']
   // .concat(multi)
   // .concat(single)
-  .concat(others);
-// let apps = ['project'];
+  // .concat(others);
+let apps = ['projects'];
 
 module.exports = new marooka.AppMounter(rootPath).mountApps(apps).start();

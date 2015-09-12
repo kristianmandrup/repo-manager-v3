@@ -1,0 +1,6 @@
+{
+    "@header": "string",
+    "@title": "string",
+    "@button": "object",
+    "@events": "array"
+}

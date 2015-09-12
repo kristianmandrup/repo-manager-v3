@@ -1,0 +1,16 @@
+.ui.card
+  .content
+    .header $data.title
+  .content
+    h4.ui.sub.header $data.header
+    .ui.small.feed       
+    for(each='event in data.events')
+      .event
+        .content
+          .summary
+           a $event.object.name
+           |  $event.object.action 
+           a $event.subject.name
+           |  $event.subject.target 
+  .extra.content
+    button.ui.button $data.button.label

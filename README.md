@@ -64,7 +64,7 @@ You can also try [FixMyJS](https://github.com/jshint/fixmyjs) which can be run a
 
 ### App file structure
 
-The file structure SHOULD look as follows.
+The project file structure should look as follows.
 
 ```
 /apps
@@ -119,7 +119,10 @@ The file structure SHOULD look as follows.
     /page - page for app
       app.jade
       app.marko
-      app.browser.json - lasso config file
+      /dependencies
+        broser.json
+        app.browser.json - lasso config file
+        widgets.json
 
     /data - state for index app, available as $data
       index.js - local state for index app only
@@ -153,6 +156,53 @@ This geneator will create an app under `apps/[app-name]` similar to the default 
     /dependencies
       app.browser.json
   marko-taglib.json
+```
+
+### Sub pages
+
+Sometimes an app contains sub pages. To support this, markoa should be able to understand how to mount sub-routes for a given app.
+
+```
+/users
+  /page
+    app.jade
+    app.marko
+    /pages
+      details.jade
+      feed.jade
+
+    /dependencies
+      app.browser.json
+```
+
+If a `/pages` folder exists, Markoa should add a route for each page there, such as `users/details` and `users/feed`. All pages for the app share the root page data by default, however the sub-pages can extend or override this data by a `page/pages` object where each entry is the data specific to a subpage. In short, the page found at `page/pages/details` will get the data from `page` extended (and potentially overwritten) by `page/pages/details`.
+
+```js
+module.exports = {
+  page: {
+    name: 'users',
+    title: 'Users',
+    pages: {
+      details: {
+        title: 'Detailed Users',
+        caption: 'Your favorites'
+      },
+      feed: {
+        // ...
+      }
+    }    
+  },
+}
+```
+
+When the page `users/details` is rendered, it will get the data:
+
+```js
+{
+  name: 'users',
+  title: 'Detailed Users', // overrides
+  caption: 'Your favorites' // extends
+}
 ```
 
 ### Generating tags
