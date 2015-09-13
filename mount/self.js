@@ -12,6 +12,6 @@ let others = ['login']
   // .concat(multi)
   // .concat(single)
   // .concat(others);
-let apps = ['projects'];
+let apps = ['project'];
 
 module.exports = new marooka.AppMounter(rootPath).mountApps(apps).start();

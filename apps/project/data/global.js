@@ -1,1 +1,1 @@
-module.exports = require('../_global/data');
+module.exports = require('../../_global/data');

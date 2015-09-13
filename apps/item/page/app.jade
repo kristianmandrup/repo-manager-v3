@@ -1,7 +1,7 @@
 extends ../layouts/base.jade
 block item
   ui-form
-    form-builder(obj='out.global.lists.projects[0]' form='out.global.forms.project')
+    form-builder(obj='data.item' form='data.form')
     ui-segment(ui='striped')
       ui-buttons(list="['Cancel', 'Save']" positive='Save' or='or')
       ui-buttons(ui='right floated')

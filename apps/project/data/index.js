@@ -1,16 +1,14 @@
 var _ = require('./global');
 
 module.exports = {
-  // See global data, lists/projects
-  // out.global.lists.projects
   page: {
     name: 'projects',
     title: 'Projects',
-    item: {
-      containers: [
-        'ships',
-        'cars'
-      ]
-    }
+    item: _.lists.projects[0], // generic :)
+    form: _.forms.project,
+    containers: [
+      'ships',
+      'cars'
+    ]
   }
-}
+};
