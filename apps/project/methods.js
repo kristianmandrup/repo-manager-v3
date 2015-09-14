@@ -10,4 +10,4 @@ module.exports = {
     console.log('UPDATE');
     yield next;
   }
-}
+};

@@ -5,7 +5,7 @@ var root = {
   apps: 'apps',
   output: 'dist',
   styles: 'styles'
-}
+};
 
 module.exports = {
   root: root.app,
