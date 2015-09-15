@@ -1,3 +1,5 @@
+/*jslint node: true */
+'use strict';
 module.exports = {
   // See global data, lists/projects
   // out.global.lists.projects
@@ -11,4 +13,4 @@ module.exports = {
       ]
     }
   }
-}
+};
