@@ -1,0 +1,10 @@
+.ui.segments(ui='data.ui')
+  .ui-segment(ui='secondary')
+    ui-header(title='$data.title')
+  .ui.segment
+    ui-form
+      .ui.list.drop-source
+        for(each='item in $data.list')
+          list-item(attrs='item')
+  .ui-segment(ui='secondary')
+    search-dropdown(attrs='$data.search')

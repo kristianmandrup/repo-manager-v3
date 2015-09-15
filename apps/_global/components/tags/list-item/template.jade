@@ -2,11 +2,11 @@
   .right.floated.content
     .ui.button
       i.remove.icon
-      | Remove
+      | $data.remove
   img.ui.avatar.image(src='$data.image')
   .content
     a.header 
       .ui.mini.input
-        input(value='$data.name')
+        input(name='$data.name' value='$data.value')
     .description 
       | $data.title

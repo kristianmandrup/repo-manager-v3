@@ -1,7 +1,14 @@
 extends ../layouts/base.jade
 block content
-  .ui.vertical.segment
-    ui-container(ui='middle aligned stackable grid')    
-      .row
-        .eight.wide.column            
-          container-list(list='out.global.lists.teams' label='Teams')
+  .ui.segment
+    .ui.header
+      form.ui.form(name='new-list')
+        .field
+          input(type='text', name='name', placeholder='Name')
+    .ui.hidden.divider
+    drop-images(action='/file-upload')
+      .fallback
+        input(name='file', type='file', multiple='')
+    #new-list.ui.list
+  for(each='item in $data.list')
+    list-segment(attrs='item')

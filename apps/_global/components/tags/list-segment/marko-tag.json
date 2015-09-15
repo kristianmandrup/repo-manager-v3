@@ -1,0 +1,6 @@
+{
+    "@ui": "string",
+    "@title": "string",
+    "@search": "object",
+    "@list": "array"
+}
