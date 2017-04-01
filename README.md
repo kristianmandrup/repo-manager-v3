@@ -1,6 +1,8 @@
 Simple Marko app skeleton
 =========================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/repo-manager-v3.svg)](https://greenkeeper.io/)
+
 Getting started
 ---------------
 
